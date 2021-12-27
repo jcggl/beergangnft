@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0xF9E43533e69BCBDf88237c85f5B3D0d9B1dcC0d0",
+  "SCAN_LINK": "https://polygonscan.com/address/0xF9E43533e69BCBDf88237c85f5B3D0d9B1dcC0d0",
+  "NETWORK": {
+    "NAME": "Polygon",
+    "SYMBOL": "Matic",
+    "ID": 137
+  },
+  "NFT_NAME": "GoodGang Labs NFTs",
+  "SYMBOL": "GGLT",
+  "MAX_SUPPLY": 100,
+  "WEI_COST": 20000000000000000,
+  "DISPLAY_COST": 0.02,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/gglabstest",
+  "SHOW_BACKGROUND": true
+}
