@@ -5,9 +5,18 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 90px;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   height: 358px;
   color: #ffffff;
+
+  @media (max-width: 767px) {
+    max-width: unset;
+    height: 164px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `
 
 const TwitterButton = styled.button`
@@ -21,6 +30,12 @@ const TwitterButton = styled.button`
   border: none;
   margin-right: 24px;
   cursor: pointer;
+  @media (max-width: 767px) {
+    width: unset;
+    min-width: 152px;
+    height: 40px;
+    margin-right: 16px;
+  }
   
   .text {
     font-style: normal;
@@ -29,6 +44,19 @@ const TwitterButton = styled.button`
     line-height: 30px;
     color: #ffffff;
     padding-right: 10px;
+    @media (max-width: 767px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  .img_logo {
+    width: 40px;
+    height: 40px;
+    @media (max-width: 767px) {
+      width: 24px;
+      height: 24px;
+    }
   }
 `
 
@@ -42,6 +70,11 @@ const DiscordButton = styled.button`
   border-radius: 2px;
   border: none;
   cursor: pointer;
+  @media (max-width: 767px) {
+    width: unset;
+    min-width: 152px;
+    height: 40px;
+  }
   
   .text {
     font-style: normal;
@@ -50,6 +83,19 @@ const DiscordButton = styled.button`
     line-height: 30px;
     color: #ffffff;
     padding-right: 10px;
+    @media (max-width: 767px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  .img_logo {
+    width: 40px;
+    height: 40px;
+    @media (max-width: 767px) {
+      width: 24px;
+      height: 24px;
+    }
   }
 `
 
@@ -58,11 +104,11 @@ const JoinButtons = () => {
     <Container>
       <TwitterButton>
         <div className="text">Join Twitter</div>
-        <img src='/config/images/twitter.svg' />
+        <img className="img_logo" src='/config/images/twitter.svg' />
       </TwitterButton>
       <DiscordButton>
         <div className="text">Join Discord</div>
-        <img src='/config/images/discord.svg' />
+        <img className="img_logo" src='/config/images/discord.svg' />
       </DiscordButton>
     </Container>
   )
