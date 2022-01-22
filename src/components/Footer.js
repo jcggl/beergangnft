@@ -3,11 +3,11 @@ import styled from "styled-components"
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
   width: 100%;
-  max-width: 1200px;
-  height: 214px;
-  color: #ffffff;
+  height: 288px;
+  background: #ffffff;
+  color: #000000;
+  justify-content: center;
   @media (max-width: 767px) {
     max-width: unset;
     height: unset;
@@ -15,90 +15,89 @@ const Container = styled.div`
     padding-right: 20px;
   }
 
-  .img_logo {
-    @media (max-width: 767px) {
-      margin-top: 50px;
-      width: 136px;
-      height: 40px;
-    }
-  }
-`
-
-const GGLabsContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  height: 107px;
-
-  @media (max-width: 767px) {
-    flex-direction: column-reverse;
-    align-items: center;
-    max-width: unset;
-    height: unset;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .menus {
+  .box {
     display: flex;
     flex-direction: row;
-    padding-top: 38px;
-
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
     @media (max-width: 767px) {
-      flex-direction: column;
-      align-items: center;
-      padding-top: 0;
+      flex-direction: column-reverse;
     }
   }
 
-  .menu {
-    margin-right: 40px;
+  .division {
+    display: flex;
+    flex-direction: column;
 
-    :last-child {
-      margin-right: 0;
+    .img_logo {
+      width: 150px;
+      height: 44px;
+      margin-top: 52px;
+      margin-bottom: 15px;
+      @media (max-width: 767px) {
+        margin-top: 0;
+        width: 120px;
+        height: 35px;
+      }
     }
 
-    @media (max-width: 767px) {
-      margin-right: 0;
-      margin-bottom: 16px;
-    }
-  }
-`
+    .copyright {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      color: #A1A1AA;
 
-const CopyrightContainer = styled.div`
-  display: flex;
-  width: 100%;
-  max-width: 1200px;
-  height: 107px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
-  color: #747474;
-  @media (max-width: 767px) {
-    max-width: unset;
-    padding-top: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: center;
+      @media (max-width: 767px) {
+        font-size: 9px;
+        line-height: 13px;
+        margin-bottom: 26px;
+      }
+    }
+
+    .menu {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      :first-child {
+        margin-top: 58px;
+      }
+      margin-top: 18px;
+      text-align: right;
+      @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 14px;
+        :first-child {
+          margin-top: 22px;
+        }
+        :last-child {
+          margin-bottom: 88px;
+        }
+      }
+    }
   }
 `
 
 const Footer = () => {
   return (
     <Container>
-      <GGLabsContainer>
-        <img className="img_logo" src='/config/images/gglabs_logo.svg' />
-        <div className="menus">
-          <div className="menu">Contact Us</div>
-          <div className="menu">Terms &#38; Conditions</div>
-          <div className="menu">Privacy Policy</div>
+      <div className="box">
+        <div className="division">
+          <img className="img_logo" src='/config/images/logo/GGlabs/main.png' />
+          <span className="copyright">Ⓒ2021 GG Labs All rights reserved</span>
         </div>
-      </GGLabsContainer>
-      <CopyrightContainer>
-        Ⓒ2021 GG Labs All rights reserved
-      </CopyrightContainer>
+        
+        <div className="division">
+          <div className="menu">hello@goodganglabs.com</div>
+          <div className="menu">Privacy Policy</div>
+          <div className="menu">Terms &#38; Conditions</div>
+        </div>
+      </div>
     </Container>
   )
 }
