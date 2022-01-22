@@ -6,15 +6,15 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
-  height: 951px;
-  background-image: url('/config/images/main_back.png');
-  background-size: cover;
+  max-width: 1920px;
+  height: 1080px;
+  background-image: url('/config/images/img_main.png');
   background-position: center;
 
   @media (max-width: 767px) {
-    max-width: 1001px;
-    height: 563px;
+    max-width: 1137px;
+    height: 640px;
+    background-size: cover;
   }
 
   .comming_soon {
