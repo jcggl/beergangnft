@@ -6,6 +6,7 @@ import Header from "../components/Header"
 import Description from "../components/Description"
 import JoinButtons from "../components/JoinButtons"
 import Footer from "../components/Footer"
+import AboutBeergang from "../components/AboutBeergang"
 
 const Container = styled.div`
   display: flex;
@@ -23,6 +24,7 @@ const Teaser = () => {
       <CommingSoon />
       <CheersBeergang />
       <Description />
+      <AboutBeergang />
       <JoinButtons />
       <Footer />
     </Container>

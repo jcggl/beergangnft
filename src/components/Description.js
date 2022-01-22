@@ -14,6 +14,7 @@ const Container = styled.div`
   justify-content: space-between;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 114px;
 
   @media (max-width: 767px) {
     max-width: unset;
@@ -23,6 +24,9 @@ const Container = styled.div`
 
   .texts {
     margin-bottom: 36px;
+    :last-child {
+      margin-bottom: 0;
+    }
     @media (max-width: 767px) {
       margin-bottom: 24px;
     }
