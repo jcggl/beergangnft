@@ -38,6 +38,7 @@ const TwitterButton = styled.a`
   }
   
   .text {
+    font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -77,6 +78,7 @@ const DiscordButton = styled.a`
   }
   
   .text {
+    font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
