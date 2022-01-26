@@ -79,6 +79,11 @@ const Container = styled.div`
           margin-bottom: 88px;
         }
       }
+
+      a:link, a:visited, a:hover {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 `
@@ -93,9 +98,9 @@ const Footer = () => {
         </div>
         
         <div className="division">
-          <div className="menu">hello@goodganglabs.com</div>
+          <div className="menu"><a href="mailto:hello@goodganglabs.com">hello@goodganglabs.com</a></div>
           <div className="menu">Privacy Policy</div>
-          <div className="menu">Terms &#38; Conditions</div>
+          <div className="menu"><a href="/teaser/terms">Terms &#38; Conditions</a></div>
         </div>
       </div>
     </Container>
