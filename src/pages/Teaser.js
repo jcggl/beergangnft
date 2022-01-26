@@ -14,7 +14,7 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background: #000000;
+  background: #101010;
 `
 
 const Teaser = () => {

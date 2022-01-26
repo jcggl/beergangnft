@@ -18,11 +18,11 @@ const Container = styled.div`
   }
 
   .logo {
-    width: 111px;
-    height: 27px;
+    width: 186px;
+    height: 28px;
     @media (max-width: 767px) {
-      width: 82px;
-      height: 20px;
+      width: 88px;
+      height: 13px;
     }
   }
 
