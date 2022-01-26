@@ -19,7 +19,7 @@ const Container = styled.div`
   }
 `
 
-const TwitterButton = styled.button`
+const TwitterButton = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@ const TwitterButton = styled.button`
   height: 68px;
   background: #4FA5F1;
   border-radius: 2px;
-  border: none;
+  text-decoration: none;
   margin-right: 24px;
   cursor: pointer;
   @media (max-width: 767px) {
@@ -60,7 +60,7 @@ const TwitterButton = styled.button`
   }
 `
 
-const DiscordButton = styled.button`
+const DiscordButton = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +68,7 @@ const DiscordButton = styled.button`
   height: 68px;
   background: #5B68EA;
   border-radius: 2px;
-  border: none;
+  text-decoration: none;
   cursor: pointer;
   @media (max-width: 767px) {
     width: unset;
@@ -102,11 +102,11 @@ const DiscordButton = styled.button`
 const JoinButtons = () => {
   return (
     <Container>
-      <TwitterButton>
+      <TwitterButton href='https://twitter.com/goodganglabs' target='_blank'>
         <div className="text">Join Twitter</div>
         <img className="img_logo" src='/config/images/twitter.svg' />
       </TwitterButton>
-      <DiscordButton>
+      <DiscordButton href='https://discord.gg/uTXDTRfK' target='_blank'>
         <div className="text">Join Discord</div>
         <img className="img_logo" src='/config/images/discord.svg' />
       </DiscordButton>

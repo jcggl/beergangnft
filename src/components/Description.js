@@ -29,6 +29,8 @@ const Container = styled.div`
     }
     @media (max-width: 767px) {
       margin-bottom: 24px;
+      font-size: 12px;
+      line-height: 24px;
     }
   }
 
@@ -37,6 +39,8 @@ const Container = styled.div`
     margin-bottom: 36px;
     @media (max-width: 767px) {
       margin-bottom: 24px;
+      font-size: 12px;
+      line-height: 24px;
     }
   }
 `

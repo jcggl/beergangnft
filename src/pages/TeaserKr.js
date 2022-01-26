@@ -3,10 +3,10 @@ import styled from "styled-components"
 import CommingSoon from "../components/CommingSoon"
 import CheersBeergang from "../components/CheersBeergang"
 import Header from "../components/Header"
-import Description from "../components/Description"
+import DescriptionKr from "../components/DescriptionKr"
 import JoinButtons from "../components/JoinButtons"
 import Footer from "../components/Footer"
-import AboutBeergang from "../components/AboutBeergang"
+import AboutBeergangKr from "../components/AboutBeergangKr"
 
 const Container = styled.div`
   display: flex;
@@ -20,11 +20,11 @@ const Container = styled.div`
 const Teaser = () => {
   return (
     <Container>
-      <Header lang={'en_US'} />
+      <Header lang={'ko_KR'} />
       <CommingSoon />
       <CheersBeergang />
-      <Description />
-      <AboutBeergang />
+      <DescriptionKr />
+      <AboutBeergangKr />
       <JoinButtons />
       <Footer />
     </Container>

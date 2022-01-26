@@ -18,11 +18,11 @@ const Container = styled.div`
   }
 
   .logo {
-    width: 111px;
-    height: 27px;
+    width: 186px;
+    height: 28px;
     @media (max-width: 767px) {
-      width: 82px;
-      height: 20px;
+      width: 88px;
+      height: 13px;
     }
   }
 
@@ -43,27 +43,52 @@ const Container = styled.div`
   }
 
   .select_box {
-    background: #000;
+    background: inherit;
     color: #fff;
     border: none;
     width: 122px;
     @media (max-width: 767px) {
-      width: unset;
+      display: none;
+    }
+  }
+
+  .select_box_mobile {
+    display: none;
+    @media (max-width: 767px) {
+      display: flex;
+      background: inherit;
+      color: #fff;
+      border: none;
     }
   }
 `
 
-const Header = () => {
+const Header = ({lang}) => {
+  const handleChange = e => {
+    const targetLang = e.target.value
+
+    if (targetLang === 'ko_KR') {
+      window.location = '/teaser/kr'
+      return
+    }
+
+    window.location = '/teaser'
+  }
+
   return (
     <Container>
-      <img className="logo" src='/config/images/logo/Beergang.png' />
+      <a href="/teaser"><img className="logo" src='/config/images/logo/Beergang.png' /></a>
       <div className="side_menu">
         {/* <img className="icon" src='/config/images/opensea.svg' /> */}
-        <img className="icon" src='/config/images/twitter.svg' />
-        <img className="icon" src='/config/images/discord.svg' />
-        <select name="lang" className="select_box">
+        <a href='https://twitter.com/goodganglabs' target='_blank'><img className="icon" src='/config/images/twitter.svg' /></a>
+        <a href='https://discord.gg/uTXDTRfK' target='_blank'><img className="icon" src='/config/images/discord.svg' /></a>
+        <select name="lang" className="select_box" onChange={handleChange} defaultValue={lang}>
           <option value="en_US">🇺🇸 English</option>
           <option value="ko_KR">🇰🇷 한국어</option>
+        </select>
+        <select name="lang" className="select_box_mobile" onChange={handleChange} defaultValue={lang}>
+          <option value="en_US">🇺🇸</option>
+          <option value="ko_KR">🇰🇷</option>
         </select>
       </div>
     </Container>
