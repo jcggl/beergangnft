@@ -4,12 +4,18 @@ import styled from "styled-components"
 const Container = styled.div`
   display: flex;
   position: fixed;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  max-width: 1680px;
   height: 96px;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.8);
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1680px;
+  }
 
   .logo {
     width: 184px;
@@ -39,13 +45,15 @@ const Header = () => {
 
   return (
     <Container>
-      <a href="/official"><img className="logo" src='/config/images/logo/Beergang.png' /></a>
-      <div className="side">
-        <div className="menu">About</div>
-        <div className="menu">Showcase</div>
-        <div className="menu">Total Distribution</div>
-        <div className="menu">Utilities</div>
-        <div className="menu">Information</div>
+      <div className="box">
+        <a href="/official"><img className="logo" src='/config/images/logo/Beergang.png' /></a>
+        <div className="side">
+          <div className="menu">About</div>
+          <div className="menu">Showcase</div>
+          <div className="menu">Total Distribution</div>
+          <div className="menu">Utilities</div>
+          <div className="menu">Information</div>
+        </div>
       </div>
     </Container>
   )
