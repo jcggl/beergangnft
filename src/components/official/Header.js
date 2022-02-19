@@ -15,6 +15,8 @@ const Container = styled.div`
     justify-content: space-between;
     width: 100%;
     max-width: 1680px;
+    margin-left: 120px;
+    margin-right: 120px;
   }
 
   .logo {
