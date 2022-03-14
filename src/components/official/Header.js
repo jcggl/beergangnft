@@ -9,6 +9,7 @@ const Container = styled.div`
   height: 96px;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
 
   @media (max-width: 767px) {
     height: 60px;

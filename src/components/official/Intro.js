@@ -9,6 +9,11 @@ const Container = styled.div`
   background: linear-gradient(182.44deg, #FF6D1B 5.6%, #FF4B32 46.82%, #000000 88.04%);
   align-items: center;
   text-align: center;
+  z-index: 1;
+
+  @media (max-width: 767px) {
+    height: 564px;
+  }
 
   .title {
     margin-top: 80px;
@@ -18,6 +23,14 @@ const Container = styled.div`
     font-size: 87px;
     line-height: 110px;
     color: #000000;
+
+    @media (max-width: 767px) {
+      margin-top: 40px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 28px;
+      line-height: 40px;
+    }
   }
 
   .desc {
@@ -28,6 +41,14 @@ const Container = styled.div`
     font-size: 20px;
     line-height: 40px;
     max-width: 1200px;
+
+    @media (max-width: 767px) {
+      margin-top: 16px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 12px;
+      line-height: 20px;
+    }
   }
 `
 
