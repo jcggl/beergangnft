@@ -19,6 +19,28 @@ const DetailTwo = () => {
       width: 318px;
       margin: 20px 0 20px auto;
     }
+    @media (max-width: 768px) {
+      .cheers {
+        right: 83px;
+        bottom: 31px;
+        font-size: 49px;
+      }
+      img {
+        width: 235px;
+        margin: 60px 0 20px auto;
+      }
+    }
+    @media (max-width: 360px) {
+      .cheers {
+        right: 83px;
+        bottom: 31px;
+        font-size: 49px;
+      }
+      img {
+        width: 166px;
+        margin: 46px 18px 50px auto;
+      }
+    }
   `
 
   return (
