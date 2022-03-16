@@ -24,8 +24,6 @@ const Container = styled.div`
     }
     @media (max-width: 360px) {
       margin-top: -265px;
-      //padding-top: 38px;
-      //padding-bottom: 0;
       padding: 38px 20px 0;
     }
 
@@ -70,15 +68,19 @@ const Container = styled.div`
 
     .details {
       display: flex;
+      box-sizing: content-box;
+      min-height: 705px;
       margin-top: 136px;
       padding: 40px 0;
       @media (max-width: 768px) {
         flex-direction: column;
+        min-height: 642px;
         margin-top: 40px;
         padding: 20px 0;
       }
       @media (max-width: 360px) {
         flex-direction: column;
+        min-height: 561px;
         margin-top: 38px;
         padding: 26px 0;
       }
@@ -185,7 +187,7 @@ const Container = styled.div`
 `
 
 const About = () => {
-  const [selectedNum, setSelectedNum] = useState(1)
+  const [selectedNum, setSelectedNum] = useState(0)
   const onClickNumber = (num) => {
     setSelectedNum(num)
   }
@@ -194,6 +196,15 @@ const About = () => {
     { number: '02', comp: <DetailTwo /> },
     { number: '03', comp: <DetailThree /> },
   ]
+  const Numbers = () => (
+    details.map((detail, idx) => (
+      <span className={selectedNum === idx && 'selected'} onClick={() => onClickNumber(idx)}>
+        {detail.number}
+        {selectedNum === idx && <em>&nbsp;&nbsp;</em>}
+      </span>
+    ))
+  )
+
   return (
     <Container>
       <div className="desc_box">
@@ -205,14 +216,9 @@ const About = () => {
         </div>
         <div className="details">
           <div className="numbers">
-            {details.map((detail, idx) => (
-              <span className={selectedNum === idx + 1 && 'selected'} onClick={() => onClickNumber(idx + 1)}>
-                {detail.number}
-                {selectedNum === idx + 1 && <em>&nbsp;&nbsp;</em>}
-              </span>
-            ))}
+            <Numbers />
           </div>
-          <div className="detail_card">{details[selectedNum - 1].comp}</div>
+          <div className="detail_card">{details[selectedNum].comp}</div>
         </div>
       </div>
     </Container>

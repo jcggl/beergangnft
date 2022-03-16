@@ -9,8 +9,8 @@ const DetailTwo = () => {
       position: absolute;
       right: 240px;
       bottom: 0;
-      font-family: Komika Axis;
       color: #ff6700;
+      font-family: Komika Axis;
       font-size: 82px;
       font-weight: 400;
     }
@@ -21,24 +21,25 @@ const DetailTwo = () => {
     }
     @media (max-width: 768px) {
       .cheers {
-        right: 83px;
-        bottom: 31px;
-        font-size: 49px;
+        right: 187px;
+        bottom: 12px;
+        font-size: 62px;
       }
       img {
         width: 235px;
-        margin: 60px 0 20px auto;
+        margin: 60px 0 18px auto;
       }
     }
     @media (max-width: 360px) {
       .cheers {
         right: 83px;
-        bottom: 31px;
+        bottom: 14px;
         font-size: 49px;
+        line-height: 82px;
       }
       img {
         width: 166px;
-        margin: 46px 18px 50px auto;
+        margin: 46px 18px 51px auto;
       }
     }
   `

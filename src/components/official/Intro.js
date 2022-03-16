@@ -31,7 +31,6 @@ const Container = styled.div`
     color: #000000;
 
     @media (max-width: 768px) {
-      //max-width: 668px;
       margin-top: 50px;
       font-size: 44px;
       line-height: 60px;
@@ -51,7 +50,6 @@ const Container = styled.div`
     line-height: 40px;
 
     @media (max-width: 768px) {
-      //max-width: 668px;
       margin-top: 24px;
       font-size: 16px;
       line-height: 32px;
