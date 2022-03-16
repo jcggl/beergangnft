@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import styled from "styled-components"
+import React, { useState } from 'react'
+import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
@@ -137,9 +137,19 @@ const Header = () => {
   return (
     <Container>
       <div className="box">
-        <a href="/official"><img className="logo" src='/config/images/logo/Beergang.png' /></a>
-        {!isMenuOpen && <div className="menu_button" onClick={handleMenuClick}><img src='/config/images/official/icon_menu.png' /></div>}
-        {isMenuOpen && <div className="menu_button" onClick={handleMenuClose}><img src='/config/images/official/icon_x.png' /></div>}
+        <a href="/official">
+          <img className="logo" src="/config/images/logo/Beergang.png" />
+        </a>
+        {!isMenuOpen && (
+          <div className="menu_button" onClick={handleMenuClick}>
+            <img src="/config/images/official/icon_menu.png" />
+          </div>
+        )}
+        {isMenuOpen && (
+          <div className="menu_button" onClick={handleMenuClose}>
+            <img src="/config/images/official/icon_x.png" />
+          </div>
+        )}
         <div className="side">
           <div className="menu">About</div>
           <div className="menu">Showcase</div>
@@ -154,19 +164,21 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {isMenuOpen && <div className="mobile_side">
-        <div className="menu">About</div>
-        <div className="menu">Showcase</div>
-        <div className="menu">Roadmap</div>
-        <div className="menu">Community</div>
-        <div className="menu">Team</div>
-        <div className="lang_box">
-          <select name="lang" className="select_box">
-            <option value="en_US">🇺🇸 EN</option>
-            <option value="ko_KR">🇰🇷 KR</option>
-          </select>
+      {isMenuOpen && (
+        <div className="mobile_side">
+          <div className="menu">About</div>
+          <div className="menu">Showcase</div>
+          <div className="menu">Roadmap</div>
+          <div className="menu">Community</div>
+          <div className="menu">Team</div>
+          <div className="lang_box">
+            <select name="lang" className="select_box">
+              <option value="en_US">🇺🇸 EN</option>
+              <option value="ko_KR">🇰🇷 KR</option>
+            </select>
+          </div>
         </div>
-      </div>}
+      )}
     </Container>
   )
 }

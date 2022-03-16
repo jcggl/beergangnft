@@ -1,12 +1,9 @@
-import React from "react"
-import styled from "styled-components"
-import Header from "../components/official/Header"
-import Promotion from "../components/official/Promotion"
-import Intro from "../components/official/Intro"
-import About from "../components/official/About"
-import Showcase from "../components/official/Showcase"
-import Distribution from "../components/official/Distribution"
-import Footer from "../components/Footer"
+import React from 'react'
+import styled from 'styled-components'
+import Header from '../components/official/Header'
+import Promotion from '../components/official/Promotion'
+import Intro from '../components/official/Intro'
+import FourTribes from '../components/official/FourTribes'
 
 const Container = styled.div`
   display: flex;
@@ -14,7 +11,16 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background: #101010;
+  background-color: #000000;
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    background-color: #000000;
+  }
 `
 
 const Official = () => {
@@ -22,12 +28,10 @@ const Official = () => {
     <Container>
       <Header />
       <Promotion />
-      <Intro />
-      {/* <Intro />
-      <About />
-      <Showcase />
-      <Distribution />
-      <Footer /> */}
+      <div className="contents">
+        <Intro />
+        <FourTribes />
+      </div>
     </Container>
   )
 }

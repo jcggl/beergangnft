@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
@@ -45,9 +45,9 @@ const Container = styled.div`
   .march_2022 {
     margin-left: 120px;
     z-index: 1;
-    
+
     .gradient {
-      background: linear-gradient(to right, #FF7D00, #F54303);
+      background: linear-gradient(to right, #ff7d00, #f54303);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -58,7 +58,7 @@ const Container = styled.div`
   }
 
   .wallet {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 44px;
@@ -67,7 +67,7 @@ const Container = styled.div`
     width: 292px;
     height: 84px;
     border: 1px solid;
-    border-image: linear-gradient(to bottom, #FF7D00, #F54303);
+    border-image: linear-gradient(to bottom, #ff7d00, #f54303);
     border-image-slice: 1;
     background: rgba(0, 0, 0, 0.6);
     font-family: 'Poppins';
@@ -75,7 +75,7 @@ const Container = styled.div`
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    color: #FF6700;
+    color: #ff6700;
     z-index: 1;
 
     @media (max-width: 767px) {
@@ -111,10 +111,10 @@ const Container = styled.div`
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    -ms-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     display: block;
     height: 100%;
     width: auto;
@@ -152,7 +152,7 @@ const Container = styled.div`
         cursor: pointer;
 
         :hover {
-          background-color: #FF6700;
+          background-color: #ff6700;
         }
 
         @media (max-width: 767px) {
@@ -176,42 +176,40 @@ const Container = styled.div`
 `
 
 const Promotion = () => {
-
   return (
     <Container>
       <div className="video-box">
         <video preload autoPlay loop muted className="video-tag">
-          <source src='https://jcggl.github.io/publicDrive/teaser.webm' type='video/webm'/>
+          <source src="https://jcggl.github.io/publicDrive/teaser.webm" type="video/webm" />
         </video>
       </div>
       <div className="links">
         <div className="box">
           <div className="icon">
-            <img className="icon_img" src='/config/images/official/icon_opensea.png' />
+            <img className="icon_img" src="/config/images/official/icon_opensea.png" />
           </div>
           <div className="icon">
-            <img className="icon_img" src='/config/images/official/icon_twitter.png' />
+            <img className="icon_img" src="/config/images/official/icon_twitter.png" />
           </div>
           <div className="icon">
-            <img className="icon_img" src='/config/images/official/icon_discord.png' />
+            <img className="icon_img" src="/config/images/official/icon_discord.png" />
           </div>
           <div className="icon">
-            <img className="icon_img" src='/config/images/official/icon_instagram.png' />
+            <img className="icon_img" src="/config/images/official/icon_instagram.png" />
           </div>
           <div className="icon">
-            <img className="icon_img" src='/config/images/official/icon_video.png' />
+            <img className="icon_img" src="/config/images/official/icon_video.png" />
           </div>
         </div>
-        
-        
-        
       </div>
       <div className="beergang">BEERGANG</div>
       <div className="presale">PRE-SALE</div>
-      <div className="march_2022"><span className="gradient">MARCH 2022</span></div>
+      <div className="march_2022">
+        <span className="gradient">MARCH 2022</span>
+      </div>
       <div className="wallet">
         Connect Wallet
-        <img className="wallet_icon" src='/config/images/official/icon_wallet.png' />
+        <img className="wallet_icon" src="/config/images/official/icon_wallet.png" />
       </div>
     </Container>
   )
