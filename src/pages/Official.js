@@ -23,10 +23,11 @@ const Official = () => {
       <Header />
       <Promotion />
       <Intro />
+      {/* <Intro />
       <About />
       <Showcase />
       <Distribution />
-      <Footer />
+      <Footer /> */}
     </Container>
   )
 }
