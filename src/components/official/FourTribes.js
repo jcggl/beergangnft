@@ -60,10 +60,12 @@ const Container = styled.div`
     width: 100%;
     height: 2516px;
     display: flex;
+    margin-bottom: 103px;
 
     @media (max-width: 767px) {
       height: unset;
       overflow-x: auto;
+      margin-bottom: 112px;
     }
 
     .lyquid_wrapper {
