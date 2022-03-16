@@ -8,7 +8,7 @@ const Container = styled.div`
   width: 100%;
   height: 96px;
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 10;
 
   @media (max-width: 767px) {

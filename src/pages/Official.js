@@ -4,6 +4,7 @@ import Header from '../components/official/Header'
 import Promotion from '../components/official/Promotion'
 import Intro from '../components/official/Intro'
 import FourTribes from '../components/official/FourTribes'
+import About from '../components/official/About'
 
 const Container = styled.div`
   display: flex;
@@ -30,6 +31,7 @@ const Official = () => {
       <Promotion />
       <div className="contents">
         <Intro />
+        <About />
         <FourTribes />
       </div>
     </Container>

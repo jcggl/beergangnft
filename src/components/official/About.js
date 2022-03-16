@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { DetailOne, DetailTwo, DetailThree } from './about'
+import { DetailOne, DetailTwo, DetailThree } from './details'
 
 const Container = styled.div`
   display: flex;
@@ -196,14 +196,13 @@ const About = () => {
     { number: '02', comp: <DetailTwo /> },
     { number: '03', comp: <DetailThree /> },
   ]
-  const Numbers = () => (
+  const Numbers = () =>
     details.map((detail, idx) => (
       <span className={selectedNum === idx && 'selected'} onClick={() => onClickNumber(idx)}>
         {detail.number}
         {selectedNum === idx && <em>&nbsp;&nbsp;</em>}
       </span>
     ))
-  )
 
   return (
     <Container>

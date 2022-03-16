@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import CloudX from './tribes/CloudX'
-import Lyquid from './tribes/Lyquid'
-import RedPool from './tribes/RedPool'
-import Staut from './tribes/Staut'
+import { Lyquid, CloudX, Staut, RedPool } from './tribes'
 
 const Container = styled.div`
   display: flex;
