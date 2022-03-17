@@ -19,7 +19,7 @@ const DetailTwo = () => {
       width: 318px;
       margin: 20px 0 20px auto;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .cheers {
         right: 187px;
         bottom: 12px;
@@ -30,7 +30,7 @@ const DetailTwo = () => {
         margin: 60px 0 18px auto;
       }
     }
-    @media (max-width: 360px) {
+    @media (max-width: 767px) {
       .cheers {
         right: 83px;
         bottom: 14px;

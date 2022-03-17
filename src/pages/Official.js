@@ -32,6 +32,7 @@ const Official = () => {
       <Promotion />
       <div className="contents">
         <Intro />
+        <About />
         <FourTribes />
         <Roadmap />
       </div>
