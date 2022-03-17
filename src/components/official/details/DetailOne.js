@@ -13,7 +13,7 @@ const DetailOne = () => {
       width: 320px;
       margin-top: 13px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .desktop_image {
         display: block;
         width: 668px;
@@ -23,7 +23,7 @@ const DetailOne = () => {
         display: none;
       }
     }
-    @media (max-width: 360px) {
+    @media (max-width: 767px) {
       .desktop_image {
         display: none;
       }

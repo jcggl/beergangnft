@@ -14,11 +14,11 @@ const Container = styled.div`
   font-style: normal;
   font-weight: 400;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     padding: 0 50px;
     height: 640px;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 767px) {
     padding: 0 20px;
     height: 564px;
   }
@@ -30,12 +30,12 @@ const Container = styled.div`
     line-height: 90px;
     color: #000000;
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       margin-top: 50px;
       font-size: 44px;
       line-height: 60px;
     }
-    @media (max-width: 360px) {
+    @media (max-width: 767px) {
       margin-top: 40px;
       font-size: 28px;
       line-height: 40px;
@@ -49,12 +49,12 @@ const Container = styled.div`
     font-size: 20px;
     line-height: 40px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       margin-top: 24px;
       font-size: 16px;
       line-height: 32px;
     }
-    @media (max-width: 360px) {
+    @media (max-width: 767px) {
       margin-top: 16px;
       font-size: 12px;
       line-height: 20px;
