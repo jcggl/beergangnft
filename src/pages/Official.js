@@ -7,6 +7,7 @@ import FourTribes from '../components/official/FourTribes'
 import About from '../components/official/About'
 import Roadmap from '../components/official/Roadmap'
 import Partnerships from '../components/official/Partnerships'
+import Join from '../components/official/Join'
 
 const Container = styled.div`
   display: flex;
@@ -37,6 +38,7 @@ const Official = () => {
         <FourTribes />
         <Roadmap />
         <Partnerships />
+        <Join />
       </div>
     </Container>
   )
