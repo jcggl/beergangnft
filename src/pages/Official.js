@@ -3,8 +3,9 @@ import styled from 'styled-components'
 import Header from '../components/official/Header'
 import Promotion from '../components/official/Promotion'
 import Intro from '../components/official/Intro'
-import FourTribes from '../components/official/FourTribes'
 import About from '../components/official/About'
+import FourTribes from '../components/official/FourTribes'
+import Showcase from '../components/official/Showcase'
 import Roadmap from '../components/official/Roadmap'
 import Partnerships from '../components/official/Partnerships'
 import Join from '../components/official/Join'
@@ -36,6 +37,7 @@ const Official = () => {
         <Intro />
         <About />
         <FourTribes />
+        <Showcase />
         <Roadmap />
         <Partnerships />
         <Join />

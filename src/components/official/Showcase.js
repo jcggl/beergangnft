@@ -6,34 +6,82 @@ const Container = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1200px;
+  padding: 122px 0;
+
+  @media (max-width: 992px) {
+    padding: 66px 50px;
+  }
+  @media (max-width: 767px) {
+    padding: 38px 20px;
+  }
 
   .title {
-    margin-top: 122px;
     font-family: Anton;
     font-style: normal;
     font-weight: normal;
     font-size: 120px;
     line-height: 120px;
     color: #ffffff;
-  }
 
-  .desc {
+    @media (max-width: 992px) {
+      font-size: 80px;
+      line-height: 100px;
+    }
+    @media (max-width: 767px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+  
+  .main_image {
     margin-top: 40px;
+    
+    @media (max-width: 992px) {
+      margin-top: 20px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 16px;  
+    }
+  }
+  
+  .desc {
+    margin-top: 34px;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
     line-height: 42px;
     color: #E4E4E7;
-  }
 
-  .main {
-    margin-top: 40px;
+    @media (max-width: 992px) {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 32px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
   .button {
-    margin-top: 40px;
-    margin-bottom: 152px;
+    background: url("/config/images/official/showcase_button.png") no-repeat;
+    background-size: contain;
+    margin-top: 34px;
+    width: 570px;
+    height: 90px;
+    border: 0;
+    cursor: pointer;
+
+    @media (max-width: 992px) {
+      margin-top: 22px;
+      width: 446px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 20px;
+      width: 320px;
+    }
   }
 `
 
@@ -42,13 +90,9 @@ const Showcase = () => {
   return (
     <Container>
       <div className="title">Showcase</div>
+      <img src="/config/images/official/showcase_main.png" className={"main_image"} />
       <div className="desc">Click each tribe to see how Beergangs work in Metaverse. Express your true identity through Beergang. They will mirror your facial expressions and gestures!</div>
-      <div className="main">
-        <img src="/config/images/official/showcase_main.png" />
-      </div>
-      <div className="button">
-        <img src="/config/images/official/showcase_button.png" />
-      </div>
+      <button className="button" />
     </Container>
   )
 }
