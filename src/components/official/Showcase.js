@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
@@ -32,18 +32,18 @@ const Container = styled.div`
       line-height: 56px;
     }
   }
-  
+
   .main_image {
     margin-top: 40px;
-    
+
     @media (max-width: 992px) {
       margin-top: 20px;
     }
     @media (max-width: 767px) {
-      margin-top: 16px;  
+      margin-top: 16px;
     }
   }
-  
+
   .desc {
     margin-top: 34px;
     font-family: Poppins;
@@ -51,7 +51,7 @@ const Container = styled.div`
     font-weight: normal;
     font-size: 28px;
     line-height: 42px;
-    color: #E4E4E7;
+    color: #e4e4e7;
 
     @media (max-width: 992px) {
       margin-top: 20px;
@@ -66,7 +66,7 @@ const Container = styled.div`
   }
 
   .button {
-    background: url("/config/images/official/showcase_button.png") no-repeat;
+    background: url('/config/images/official/showcase_button.png') no-repeat;
     background-size: contain;
     margin-top: 34px;
     width: 570px;
@@ -86,12 +86,14 @@ const Container = styled.div`
 `
 
 const Showcase = () => {
-
   return (
     <Container>
       <div className="title">Showcase</div>
-      <img src="/config/images/official/showcase_main.png" className={"main_image"} />
-      <div className="desc">Click each tribe to see how Beergangs work in Metaverse. Express your true identity through Beergang. They will mirror your facial expressions and gestures!</div>
+      <img src="/config/images/official/showcase_main.png" className="main_image" />
+      <div className="desc">
+        Click each tribe to see how Beergangs work in Metaverse. Express your true identity through Beergang. They will
+        mirror your facial expressions and gestures!
+      </div>
       <button className="button" />
     </Container>
   )

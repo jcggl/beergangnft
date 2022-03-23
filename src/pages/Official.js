@@ -9,6 +9,7 @@ import Showcase from '../components/official/Showcase'
 import Roadmap from '../components/official/Roadmap'
 import Partnerships from '../components/official/Partnerships'
 import Join from '../components/official/Join'
+import Footer from '../components/official/Footer'
 
 const Container = styled.div`
   display: flex;
@@ -41,6 +42,7 @@ const Official = () => {
         <Roadmap />
         <Partnerships />
         <Join />
+        <Footer />
       </div>
     </Container>
   )
