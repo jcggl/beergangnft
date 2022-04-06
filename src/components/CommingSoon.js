@@ -1,18 +1,18 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1920px;
+  //max-width: 1920px;
   height: 1080px;
   background-image: url('/config/images/img_main.png');
   background-position: center;
 
   @media (max-width: 767px) {
-    max-width: 1137px;
+    //max-width: 1137px;
     height: 640px;
     background-size: cover;
   }
@@ -20,9 +20,11 @@ const Container = styled.div`
   .comming_soon {
     width: 100%;
     max-width: 792px;
+    padding-top: 200px;
 
     @media (max-width: 767px) {
       max-width: unset;
+      padding-top: 100px;
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -37,7 +39,7 @@ const CommingSoonGif = styled.img`
 const CommingSoon = () => {
   return (
     <Container>
-      <img className="comming_soon" src='/config/images/text_01_speed.gif' />
+      <img className="comming_soon" src="/config/images/text_01_speed.gif" />
     </Container>
   )
 }

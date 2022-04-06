@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
@@ -48,7 +48,7 @@ const Container = styled.div`
       font-weight: normal;
       font-size: 12px;
       line-height: 18px;
-      color: #A1A1AA;
+      color: #a1a1aa;
 
       @media (max-width: 767px) {
         font-size: 9px;
@@ -76,11 +76,13 @@ const Container = styled.div`
           margin-top: 22px;
         }
         :last-child {
-          margin-bottom: 88px;
+          margin-bottom: 40px;
         }
       }
 
-      a:link, a:visited, a:hover {
+      a:link,
+      a:visited,
+      a:hover {
         text-decoration: none;
         color: inherit;
       }
@@ -93,14 +95,16 @@ const Footer = () => {
     <Container>
       <div className="box">
         <div className="division">
-          <img className="img_logo" src='/config/images/logo/GGlabs/main.png' />
+          <img className="img_logo" src="/config/images/logo/GGlabs/main.png" />
           <span className="copyright">Ⓒ2021 GG Labs All rights reserved</span>
         </div>
-        
+
         <div className="division">
-          <div className="menu"><a href="mailto:hello@goodganglabs.com">hello@goodganglabs.com</a></div>
-          <div className="menu">Privacy Policy</div>
-          <div className="menu"><a href="/teaser/terms">Terms &#38; Conditions</a></div>
+          <div className="menu">
+            <a href="mailto:hello@goodganglabs.com">hello@goodganglabs.com</a>
+          </div>
+          {/*<div className="menu">Privacy Policy</div>*/}
+          {/*<div className="menu"><a href="/teaser/terms">Terms &#38; Conditions</a></div>*/}
         </div>
       </div>
     </Container>

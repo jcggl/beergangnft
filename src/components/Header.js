@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
@@ -13,6 +13,7 @@ const Container = styled.div`
   @media (max-width: 767px) {
     max-width: unset;
     height: 62px;
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -63,8 +64,8 @@ const Container = styled.div`
   }
 `
 
-const Header = ({lang}) => {
-  const handleChange = e => {
+const Header = ({ lang }) => {
+  const handleChange = (e) => {
     const targetLang = e.target.value
 
     if (targetLang === 'ko_KR') {
@@ -77,19 +78,25 @@ const Header = ({lang}) => {
 
   return (
     <Container>
-      <a href="/teaser"><img className="logo" src='/config/images/logo/Beergang.png' /></a>
+      <a href="/teaser">
+        <img className="logo" src="/config/images/logo/Beergang.png" />
+      </a>
       <div className="side_menu">
         {/* <img className="icon" src='/config/images/opensea.svg' /> */}
-        <a href='https://twitter.com/goodganglabs' target='_blank'><img className="icon" src='/config/images/twitter.svg' /></a>
-        <a href='https://discord.gg/uTXDTRfK' target='_blank'><img className="icon" src='/config/images/discord.svg' /></a>
-        <select name="lang" className="select_box" onChange={handleChange} defaultValue={lang}>
-          <option value="en_US">🇺🇸 English</option>
-          <option value="ko_KR">🇰🇷 한국어</option>
-        </select>
-        <select name="lang" className="select_box_mobile" onChange={handleChange} defaultValue={lang}>
-          <option value="en_US">🇺🇸</option>
-          <option value="ko_KR">🇰🇷</option>
-        </select>
+        <a href="https://twitter.com/goodganglabs" target="_blank">
+          <img className="icon" src="/config/images/twitter.svg" />
+        </a>
+        <a href="https://discord.gg/uTXDTRfK" target="_blank">
+          <img className="icon" src="/config/images/discord.svg" />
+        </a>
+        {/*<select name="lang" className="select_box" onChange={handleChange} defaultValue={lang}>*/}
+        {/*  <option value="en_US">🇺🇸 English</option>*/}
+        {/*  <option value="ko_KR">🇰🇷 한국어</option>*/}
+        {/*</select>*/}
+        {/*<select name="lang" className="select_box_mobile" onChange={handleChange} defaultValue={lang}>*/}
+        {/*  <option value="en_US">🇺🇸</option>*/}
+        {/*  <option value="ko_KR">🇰🇷</option>*/}
+        {/*</select>*/}
       </div>
     </Container>
   )

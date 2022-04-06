@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
@@ -12,22 +12,24 @@ const Container = styled.div`
   width: 100%;
   max-width: 996px;
   justify-content: space-between;
+  margin-top: 170px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 88px;
 
   @media (max-width: 767px) {
     max-width: unset;
+    margin-top: 70px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 50px;
   }
 
   .texts {
     margin-bottom: 36px;
+
     :last-child {
       margin-bottom: 0;
     }
+
     @media (max-width: 767px) {
       margin-bottom: 24px;
       font-size: 12px;
@@ -36,20 +38,17 @@ const Container = styled.div`
   }
 
   .title {
+    margin-bottom: 24px;
     font-family: Anton;
     font-style: normal;
     font-weight: normal;
-    font-size: 90px;
-    line-height: 135px;
+    font-size: 72px;
+    line-height: 108px;
     font-feature-settings: 'pnum' on, 'lnum' on;
 
     @media (max-width: 767px) {
       font-size: 48px;
       line-height: 58px;
-    }
-
-    .highlight {
-      color: #FF6700;
     }
   }
 
@@ -61,20 +60,24 @@ const Container = styled.div`
     font-size: 30px;
     line-height: 45px;
     text-align: center;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 2px 16px;
     color: #000000;
-    background: #FF6700;
+    background: #ff6700;
 
     @media (max-width: 767px) {
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 8px;
-      padding-bottom: 8px;
+      padding: 8px 20px;
       font-size: 16px;
       line-height: 24px;
+    }
+  }
+
+  .description {
+    margin-top: 14px;
+    padding: 0 120px;
+
+    @media (max-width: 767px) {
+      margin-top: 0;
+      padding: 0;
     }
   }
 `
@@ -82,11 +85,31 @@ const Container = styled.div`
 const AboutBeergang = () => {
   return (
     <Container>
-      <div className="title texts">About{' '}<span className="highlight">BEERGANG</span></div>
-      <div className="texts"><span className="subtitle">The GOOD Web 3.0 Community on Metaverse</span></div>
-      <div className="texts">Beergang is a collection of 10,000 unique NFT avatars built on the Homebrew Algorithm created by GoodGang Labs and stored on the Ethereum blockchain network and IPFS.</div>
-      <div className="texts">Beergang holders will receive various membership benefits. Typically, you will receive a PASS to enter GangHouse, a private 3D metaverse Pub that will be launched in Q2 this year. In GangHouse, a real metaverse space, you will be able to experience and create together the future by communicating with members from various backgrounds with common interests (Web 3.0, Metaverse).</div>
-      <div className="texts">There will be more Beergang related updates soon, so please stay tuned!<br/>Stay tuned for the latest news and updates on GoodGang Labs' official Twitter and Discord.</div>
+      <div className="title">Cheers to Beergang</div>
+      <div className="texts">
+        <span className="subtitle">The GOOD Web 3.0 Community on Metaverse</span>
+      </div>
+      <div className="description">
+        <div className="texts">
+          Beergang is a collection of 10,000 avatars built on the Homebrew Algorithm created by GoodGang Labs and stored
+          on the Ethereum blockchain network and IPFS.
+        </div>
+        <div className="texts">
+          Born amid pandemic, GoodGang Labs is made up of professionals with more than 10 years of experience in
+          Metaverse, Community, Avatar, and AR related projects in global IT top tier companies (Facebook, Google,
+          Naver, Line, Snow, and more).
+        </div>
+        <div className="texts">
+          Currently, members live and work remotely in major global cities <br />
+          (San Francisco, Seoul, Hawaii, and Vancouver).
+        </div>
+
+        <div className="texts">
+          The Beergang character has a unique charm <br />
+          that blends with the various experiences of the members.
+        </div>
+        <div className="texts">There will be more Beergang related updates soon, so please stay tuned!</div>
+      </div>
     </Container>
   )
 }

@@ -1,55 +1,58 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   position: relative;
   align-items: center;
   justify-content: center;
   width: 100%;
   max-width: 1200px;
-  height: 333px;
-  color: #FFFFFF;
+  //height: 303px;
+  margin-top: 103px;
+  color: #ffffff;
   font-family: Anton;
   font-style: normal;
   font-weight: normal;
-  font-size: 90px;
-  line-height: 135px;
+  font-size: 72px;
+  line-height: 108px;
   font-feature-settings: 'pnum' on, 'lnum' on;
 
   @media (max-width: 767px) {
     max-width: unset;
-    height: 275px;
-    font-size: 48px;
-    line-height: 58px;
+    //height: 285px;
+    margin-top: 24px;
+    padding: 0 20px;
+    font-size: 32px;
+    line-height: 46px;
   }
 
   .text {
-    text-align: center
-  }
+    text-align: center;
 
-  .cheers {
-    color: #FF6700;
+    .cheers {
+      color: #ff6700;
+    }
   }
 
   .bottle_cap {
     display: flex;
-    position: absolute;
-    left: 954px;
-    top: 170px;
+    //position: absolute;
+    margin-top: -40px;
+    //bottom: 0;
     @media (max-width: 767px) {
-      left: unset;
-      right: 40px;
-      top: 175px;
+      margin-top: -15px;
+      //bottom: 0;
     }
-  }
 
-  .bottle_cap_img {
-    width: 199px;
-    height: 199px;
-    @media (max-width: 767px) {
-      width: 114px;
-      height: 117px;
+    .bottle_cap_img {
+      width: 140px;
+      height: 123px;
+      @media (max-width: 767px) {
+        width: 114px;
+        height: 116px;
+      }
     }
   }
 `
@@ -57,9 +60,12 @@ const Container = styled.div`
 const CheersBeergang = () => {
   return (
     <Container>
-      <span className="text">Say&nbsp;<span className="cheers">Cheers</span>&nbsp;to BEERGANG</span>
+      <span className="text">
+        Beergang is the&nbsp;<span className="cheers">world's first emotionally interactive full-body 3D</span>
+        &nbsp;NFT avatar
+      </span>
       <div className="bottle_cap">
-        <img className="bottle_cap_img" src='/config/images/img_bottle_cap.png' />
+        <img className="bottle_cap_img" src="/config/images/img_bottle_cap.png" />
       </div>
     </Container>
   )

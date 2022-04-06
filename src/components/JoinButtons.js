@@ -1,21 +1,20 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 90px;
+  margin-top: 69px;
+  margin-bottom: 160px;
   width: 100%;
   max-width: 1200px;
-  height: 358px;
   color: #ffffff;
 
   @media (max-width: 767px) {
     max-width: unset;
-    height: 164px;
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    padding: 0 20px;
   }
 `
 
@@ -25,7 +24,7 @@ const TwitterButton = styled.a`
   justify-content: center;
   width: 260px;
   height: 68px;
-  background: #4FA5F1;
+  background: #4fa5f1;
   border-radius: 2px;
   text-decoration: none;
   margin-right: 24px;
@@ -36,7 +35,7 @@ const TwitterButton = styled.a`
     height: 40px;
     margin-right: 16px;
   }
-  
+
   .text {
     font-family: Poppins;
     font-style: normal;
@@ -44,7 +43,7 @@ const TwitterButton = styled.a`
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
-    padding-right: 10px;
+    padding-right: 20px;
     @media (max-width: 767px) {
       font-size: 12px;
       line-height: 18px;
@@ -67,7 +66,7 @@ const DiscordButton = styled.a`
   justify-content: center;
   width: 260px;
   height: 68px;
-  background: #5B68EA;
+  background: #f14f80;
   border-radius: 2px;
   text-decoration: none;
   cursor: pointer;
@@ -76,7 +75,7 @@ const DiscordButton = styled.a`
     min-width: 152px;
     height: 40px;
   }
-  
+
   .text {
     font-family: Poppins;
     font-style: normal;
@@ -84,7 +83,7 @@ const DiscordButton = styled.a`
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
-    padding-right: 10px;
+    padding-right: 20px;
     @media (max-width: 767px) {
       font-size: 12px;
       line-height: 18px;
@@ -104,13 +103,13 @@ const DiscordButton = styled.a`
 const JoinButtons = () => {
   return (
     <Container>
-      <TwitterButton href='https://twitter.com/goodganglabs' target='_blank'>
+      <TwitterButton href="https://twitter.com/beergang_nft" target="_blank">
         <div className="text">Join Twitter</div>
-        <img className="img_logo" src='/config/images/twitter.svg' />
+        <img className="img_logo" src="/config/images/twitter.svg" />
       </TwitterButton>
-      <DiscordButton href='https://discord.gg/uTXDTRfK' target='_blank'>
+      <DiscordButton href="https://www.instagram.com/beergang_nft/" target="_blank">
         <div className="text">Join Discord</div>
-        <img className="img_logo" src='/config/images/discord.svg' />
+        <img className="img_logo" src="/config/images/instagram.svg" />
       </DiscordButton>
     </Container>
   )
