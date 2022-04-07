@@ -89,7 +89,9 @@ const Showcase = () => {
   return (
     <Container>
       <div className="title">Showcase</div>
-      <img src="/config/images/official/showcase_main.png" className="main_image" />
+      <a href="https://pleasant-mousy-jackfruit.glitch.me/" target="_blank">
+        <img src="/config/images/official/showcase_main.png" className="main_image" />
+      </a>
       <div className="desc">
         Click each tribe to see how Beergangs work in Metaverse. Express your true identity through Beergang. They will
         mirror your facial expressions and gestures!
