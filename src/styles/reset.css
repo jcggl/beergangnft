@@ -138,10 +138,15 @@ table {
   src: local('Poppins'), url(Poppins-Regular.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Komika Axis';
+  src: local('Komika Axis'), url(KOMIKAX.woff) format('woff');
+}
+
 body {
   margin: 0;
   font-family: 'coder', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif, 'Anton', 'Poppins';
+    sans-serif, 'Anton', 'Poppins', 'Komika Axis';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
