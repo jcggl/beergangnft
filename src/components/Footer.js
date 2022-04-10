@@ -96,7 +96,7 @@ const Footer = () => {
       <div className="box">
         <div className="division">
           <img className="img_logo" src="/config/images/logo/GGlabs/main.png" />
-          <span className="copyright">Ⓒ2021 GG Labs All rights reserved</span>
+          <span className="copyright">Ⓒ2022 GOOD GANG LABS PTE. LTD.</span>
         </div>
 
         <div className="division">

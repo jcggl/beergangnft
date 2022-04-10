@@ -108,7 +108,7 @@ const JoinButtons = () => {
         <img className="img_logo" src="/config/images/twitter.svg" />
       </TwitterButton>
       <DiscordButton href="https://www.instagram.com/beergang_nft/" target="_blank">
-        <div className="text">Join Discord</div>
+        <div className="text">Join Instagram</div>
         <img className="img_logo" src="/config/images/instagram.svg" />
       </DiscordButton>
     </Container>

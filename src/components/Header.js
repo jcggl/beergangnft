@@ -83,7 +83,7 @@ const Header = ({ lang }) => {
       </a>
       <div className="side_menu">
         {/* <img className="icon" src='/config/images/opensea.svg' /> */}
-        <a href="https://twitter.com/goodganglabs" target="_blank">
+        <a href="https://twitter.com/beergang_nft" target="_blank">
           <img className="icon" src="/config/images/twitter.svg" />
         </a>
         <a href="https://www.instagram.com/beergang_nft/" target="_blank">
