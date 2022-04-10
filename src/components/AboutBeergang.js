@@ -96,7 +96,7 @@ const AboutBeergang = () => {
         </div>
         <div className="texts">
           Born amid pandemic, GoodGang Labs is made up of professionals with more than 10 years of experience in
-          Metaverse, Community, Avatar, and AR related projects in global IT top tier companies (Facebook, Google,
+          Metaverse, Community, Avatar, AI, and AR related projects in global IT top tier companies (Facebook, Google,
           Naver, Line, Snow, and more).
         </div>
         <div className="texts">

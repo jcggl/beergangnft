@@ -12,6 +12,7 @@ const Container = styled.div`
   width: 100%;
   max-width: 996px;
   justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
   text-align: center;
   color: #ffffff;
@@ -32,6 +33,7 @@ const Container = styled.div`
   }
 
   .mission {
+    max-width: 970px;
     font-style: italic;
     font-weight: 600;
 

@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /teaser/kr
+Sitemap: https://www.beergang.xyz/sitemap.xml
