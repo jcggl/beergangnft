@@ -86,8 +86,8 @@ const Header = ({ lang }) => {
         <a href="https://twitter.com/goodganglabs" target="_blank">
           <img className="icon" src="/config/images/twitter.svg" />
         </a>
-        <a href="https://discord.gg/uTXDTRfK" target="_blank">
-          <img className="icon" src="/config/images/discord.svg" />
+        <a href="https://www.instagram.com/beergang_nft/" target="_blank">
+          <img className="icon" src="/config/images/instagram.svg" />
         </a>
         {/*<select name="lang" className="select_box" onChange={handleChange} defaultValue={lang}>*/}
         {/*  <option value="en_US">🇺🇸 English</option>*/}
