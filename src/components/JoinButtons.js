@@ -43,8 +43,9 @@ const TwitterButton = styled.a`
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
-    padding-right: 20px;
+    margin-right: 20px;
     @media (max-width: 767px) {
+      margin-right: 10px;
       font-size: 12px;
       line-height: 18px;
     }
@@ -83,8 +84,9 @@ const DiscordButton = styled.a`
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
-    padding-right: 20px;
+    margin-right: 20px;
     @media (max-width: 767px) {
+      margin-right: 10px;
       font-size: 12px;
       line-height: 18px;
     }
