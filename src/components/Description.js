@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { RenderIfElse } from './RenderIf'
 
 const Container = styled.div`
   display: flex;
@@ -16,7 +17,6 @@ const Container = styled.div`
   margin-top: 10px;
   text-align: center;
   color: #ffffff;
-  //margin-bottom: 114px;
 
   @media (max-width: 767px) {
     max-width: unset;
@@ -45,9 +45,17 @@ const Container = styled.div`
 `
 
 const Description = () => {
+  const windowSize = window.matchMedia('screen and (max-width: 767px)')
+
   return (
     <Container>
-      <div className="intro">Introducing Beergang, the first project of GoodGang Labs. Our mission is:</div>
+      <RenderIfElse renderFirst={windowSize.matches}>
+        <div className="intro">
+          Introducing Beergang, the first project of <br />
+          GoodGang Labs. Our mission is:
+        </div>
+        <div className="intro">Introducing Beergang, the first project of GoodGang Labs. Our mission is:</div>
+      </RenderIfElse>
       <div className="mission">
         “To make the world a better place by helping people express their true identities and use their passion and
         talents to generate legitimate revenue in a fun way.”

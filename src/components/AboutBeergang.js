@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { RenderIfElse } from './RenderIf'
 
 const Container = styled.div`
   display: flex;
@@ -83,6 +84,8 @@ const Container = styled.div`
 `
 
 const AboutBeergang = () => {
+  const windowSize = window.matchMedia('screen and (max-width: 767px)')
+
   return (
     <Container>
       <div className="title">Cheers to Beergang</div>
@@ -90,14 +93,21 @@ const AboutBeergang = () => {
         <span className="subtitle">The GOOD Web 3.0 Community on Metaverse</span>
       </div>
       <div className="description">
-        <div className="texts">
-          Beergang is a collection of 10,000 avatars built on the Homebrew Algorithm created by GoodGang Labs and stored
-          on the Ethereum blockchain network and IPFS.
-          <br />
-          Using beer and pub culture as a motif,
-          <br />
-          Beergang is the world's first emotionally interactive full-body 3D NFT avatar.
-        </div>
+        <RenderIfElse renderFirst={windowSize}>
+          <div className="texts">
+            Beergang is a collection of 10,000 avatars built on the Homebrew Algorithm created by GoodGang Labs and
+            stored on the Ethereum blockchain network and IPFS. Using beer and pub culture as a motif, Beergang is the
+            world's first emotionally interactive full-body 3D NFT avatar.
+          </div>
+          <div className="texts">
+            Beergang is a collection of 10,000 avatars built on the Homebrew Algorithm created by GoodGang Labs and
+            stored on the Ethereum blockchain network and IPFS.
+            <br />
+            Using beer and pub culture as a motif,
+            <br />
+            Beergang is the world's first emotionally interactive full-body 3D NFT avatar.
+          </div>
+        </RenderIfElse>
         <div className="texts">
           Our growing team includes professionals from global top-tier tech companies (Google, Meta, Naver, Line, Snow)
           with over ten years of experience in Metaverse, Avatar, VR/AR, Community and AI.
