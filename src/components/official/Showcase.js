@@ -86,12 +86,14 @@ const Container = styled.div`
 `
 
 const Showcase = () => {
+  const onClickImg = () => {
+    window.open('https://pleasant-mousy-jackfruit.glitch.me/', '_blank')
+  }
+
   return (
     <Container>
       <div className="title">Showcase</div>
-      <a href="https://pleasant-mousy-jackfruit.glitch.me/" target="_blank">
-        <img src="/config/images/official/showcase_main.png" className="main_image" />
-      </a>
+      <img src="/config/images/official/showcase_main.png" className="main_image" onClick={onClickImg} />
       <div className="desc">
         Click each tribe to see how Beergangs work in Metaverse. Express your true identity through Beergang. They will
         mirror your facial expressions and gestures!
