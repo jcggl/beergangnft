@@ -47,7 +47,7 @@ const Container = styled.div`
 const Description = () => {
   return (
     <Container>
-      <div className="intro">Introducing Beergang, the first project of GoodGang Labs. Our mission is</div>
+      <div className="intro">Introducing Beergang, the first project of GoodGang Labs. Our mission is:</div>
       <div className="mission">
         “To make the world a better place by helping people express their true identities and use their passion and
         talents to generate legitimate revenue in a fun way.”
