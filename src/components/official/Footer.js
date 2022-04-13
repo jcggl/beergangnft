@@ -169,16 +169,26 @@ const Footer = () => {
         </a>
         <div className="links">
           <div className="operations">
-            <img className="icon_opensea" src="/config/images/official/icon_opensea.png" />
-            <img className="icon_twitter" src="/config/images/official/icon_twitter.png" />
-            <img className="icon_discord" src="/config/images/official/icon_discord.png" />
-            <img className="icon_instagram" src="/config/images/official/icon_instagram.png" />
+            <a className="img_link">
+              <img className="icon_opensea" src="/config/images/official/icon_opensea.png" />
+            </a>
+            <a className="img_link" href="https://twitter.com/beergang_nft" target="_blank">
+              <img className="icon_twitter" src="/config/images/official/icon_twitter.png" />
+            </a>
+            <a className="img_link">
+              <img className="icon_discord" src="/config/images/official/icon_discord.png" />
+            </a>
+            <a className="img_link" href="https://www.instagram.com/beergang_nft/" target="_blank">
+              <img className="icon_instagram" src="/config/images/official/icon_instagram.png" />
+            </a>
           </div>
           <div className="desc">
             <div className="menu">
               <a href="mailto:hello@goodganglabs.com">hello@goodganglabs.com</a>
             </div>
-            <div className="menu">Privacy Policy</div>
+            <div className="menu">
+              <a href="https://www.iubenda.com/privacy-policy/98145850">Privacy Policy</a>
+            </div>
             <div className="menu">
               <a href="/teaser/terms">Terms &#38; Conditions</a>
             </div>

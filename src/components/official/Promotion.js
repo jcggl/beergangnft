@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1960px;
+  //max-width: 1960px;
   height: 1080px;
   color: #ffffff;
   font-family: Anton;
@@ -18,6 +18,26 @@ const Container = styled.div`
     height: 100%;
     font-size: 55px;
     line-height: 60px;
+  }
+
+  .video-box {
+    text-align: center;
+    z-index: 0;
+
+    .video-tag {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      //margin-right: -50%;
+      -ms-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      display: block;
+      height: 100%;
+      width: auto;
+      margin: 0 auto;
+    }
   }
 
   .beergang {
@@ -34,6 +54,7 @@ const Container = styled.div`
   .presale {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     color: #000000;
+    margin-top: 12px;
     margin-left: 120px;
     z-index: 1;
 
@@ -43,11 +64,13 @@ const Container = styled.div`
   }
 
   .march_2022 {
+    margin-top: 12px;
     margin-left: 120px;
     z-index: 1;
 
     .gradient {
       background: linear-gradient(to right, #ff7d00, #f54303);
+      box-shadow: -12px 0px 9px 0px #5531311f;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -63,19 +86,21 @@ const Container = styled.div`
     align-items: center;
     margin-top: 44px;
     margin-left: 120px;
-    margin-bottom: 32px;
-    width: 292px;
+    //margin-bottom: 32px;
+    width: 420px;
     height: 84px;
-    border: 1px solid;
-    border-image: linear-gradient(to bottom, #ff7d00, #f54303);
-    border-image-slice: 1;
-    background: rgba(0, 0, 0, 0.6);
+    //border: 1px solid;
+    background: linear-gradient(182.44deg, #ff6d1b 5.6%, #ff4b32 88.91%);
+    backdrop-filter: blur(10px);
+    //border-image: linear-gradient(to bottom, #ff7d00, #f54303);
+    //border-image-slice: 1;
+    //background: rgba(0, 0, 0, 0.6);
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    color: #ff6700;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
     z-index: 1;
 
     @media (max-width: 767px) {
@@ -86,11 +111,12 @@ const Container = styled.div`
       height: 40px;
       font-size: 14px;
       line-height: 18px;
+      font-weight: 600;
     }
 
     .wallet_icon {
-      margin-left: 18px;
-      width: 36px;
+      margin-left: 20px;
+      width: 46px;
       height: 36px;
 
       @media (max-width: 767px) {
@@ -99,26 +125,6 @@ const Container = styled.div`
         height: 24px;
       }
     }
-  }
-
-  .video-box {
-    text-align: center;
-    z-index: 0;
-  }
-
-  .video-tag {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    -ms-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    display: block;
-    height: 100%;
-    width: auto;
-    margin: 0 auto;
   }
 
   .links {
@@ -188,28 +194,28 @@ const Promotion = () => {
           <div className="icon">
             <img className="icon_img" src="/config/images/official/icon_opensea.png" />
           </div>
-          <div className="icon">
+          <a className="icon" href="https://twitter.com/beergang_nft" target="_blank">
             <img className="icon_img" src="/config/images/official/icon_twitter.png" />
-          </div>
+          </a>
           <div className="icon">
             <img className="icon_img" src="/config/images/official/icon_discord.png" />
           </div>
-          <div className="icon">
+          <a className="icon" href="https://www.instagram.com/beergang_nft/" target="_blank">
             <img className="icon_img" src="/config/images/official/icon_instagram.png" />
-          </div>
+          </a>
           <div className="icon">
             <img className="icon_img" src="/config/images/official/icon_video.png" />
           </div>
         </div>
       </div>
       <div className="beergang">BEERGANG</div>
-      <div className="presale">PRE-SALE</div>
+      <div className="presale">#PHASE 1</div>
       <div className="march_2022">
-        <span className="gradient">MARCH 2022</span>
+        <span className="gradient">2022.05.01</span>
       </div>
       <div className="wallet">
-        Connect Wallet
-        <img className="wallet_icon" src="/config/images/official/icon_wallet.png" />
+        Connect to Metamask
+        <img className="wallet_icon" src="/config/images/official/icon_arrow.png" />
       </div>
     </Container>
   )
