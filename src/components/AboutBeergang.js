@@ -93,22 +93,24 @@ const AboutBeergang = () => {
         <div className="texts">
           Beergang is a collection of 10,000 avatars built on the Homebrew Algorithm created by GoodGang Labs and stored
           on the Ethereum blockchain network and IPFS.
+          <br />
+          Using beer and pub culture as a motif,
+          <br />
+          Beergang is the world's first emotionally interactive full-body 3D NFT avatar.
         </div>
         <div className="texts">
-          Born amid pandemic, GoodGang Labs is made up of professionals with more than 10 years of experience in
-          Metaverse, Community, Avatar, AI, and AR related projects in global IT top tier companies (Facebook, Google,
-          Naver, Line, Snow, and more).
+          Our growing team includes professionals from global top-tier tech companies (Google, Meta, Naver, Line, Snow)
+          with over ten years of experience in Metaverse, Avatar, VR/AR, Community and AI.
         </div>
         <div className="texts">
-          Currently, members live and work remotely in major global cities <br />
-          (San Francisco, Seoul, Hawaii, and Vancouver).
+          We are backed by partners from Meta, Snap, Naver, Kakao, Planetarium, Kimgisa Lab, and other leading
+          investors.
         </div>
-
         <div className="texts">
-          The Beergang character has a unique charm <br />
-          that blends with the various experiences of the members.
+          There will be more Beergang related updates soon
+          <br />
+          STAY TUNED FOR MORE!
         </div>
-        <div className="texts">There will be more Beergang related updates soon, so please stay tuned!</div>
       </div>
     </Container>
   )
