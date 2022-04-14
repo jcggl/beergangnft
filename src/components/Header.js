@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Container = styled.div`
   display: flex;
   position: absolute;
+  z-index: 1;
   align-items: center;
   justify-content: space-between;
   width: 100%;
