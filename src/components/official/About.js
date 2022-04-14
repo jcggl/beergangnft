@@ -198,7 +198,10 @@ const About = () => {
   ]
   const Numbers = () =>
     details.map((detail, idx) => (
-      <span className={selectedNum === idx && 'selected'} onClick={() => onClickNumber(idx)}>
+      <span
+        key={`about${idx + 1}`}
+        className={selectedNum === idx ? 'selected' : undefined}
+        onClick={() => onClickNumber(idx)}>
         {detail.number}
         {selectedNum === idx && <em>&nbsp;&nbsp;</em>}
       </span>
