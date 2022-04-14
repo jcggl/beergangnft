@@ -85,8 +85,11 @@ const Container = styled.div`
 const Staut = () => {
   return (
     <Container>
-      <img className="main_img" src="/config/images/official/img_avatar_staut.png" />
-      <img className="chat_img" src="/config/images/official/img_avatar_staut_chat@3x.png" />
+      {/*<img className="main_img" src="/config/images/official/img_avatar_staut.png" />*/}
+      {/*<img className="chat_img" src="/config/images/official/img_avatar_staut_chat@3x.png" />*/}
+      <video preload="true" autoPlay loop muted className="video-tag">
+        <source src="https://jcggl.github.io/publicDrive/Avatar_video/maintwitt_brown.webm" type="video/webm" />
+      </video>
       <div className="staut_title">
         Staut <span className="staut_abv">5.5% ABV</span>
       </div>

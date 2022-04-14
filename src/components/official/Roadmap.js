@@ -58,16 +58,16 @@ const Roadmap = () => {
     <Container>
       <div className="title">Roadmap</div>
       <Flicking bound="true">
-        <div class="panel roadmap_panel">
+        <div className="panel roadmap_panel">
           <TrueIdentity />
         </div>
-        <div class="panel roadmap_panel">
+        <div className="panel roadmap_panel">
           <Metaverse />
         </div>
-        <div class="panel roadmap_panel">
+        <div className="panel roadmap_panel">
           <PhysicalWorld />
         </div>
-        <div class="panel roadmap_panel">
+        <div className="panel roadmap_panel">
           <Community />
         </div>
       </Flicking>

@@ -4,6 +4,7 @@ import Header from '../components/official/Header'
 import Promotion from '../components/official/Promotion'
 import Intro from '../components/official/Intro'
 import About from '../components/official/About'
+import Universe from '../components/official/Universe'
 import FourTribes from '../components/official/FourTribes'
 import Showcase from '../components/official/Showcase'
 import Roadmap from '../components/official/Roadmap'
@@ -38,6 +39,7 @@ const Official = () => {
       <div className="contents">
         <Intro />
         <About />
+        <Universe />
         <FourTribes />
         <Showcase />
         <Roadmap />

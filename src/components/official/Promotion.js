@@ -185,7 +185,7 @@ const Promotion = () => {
   return (
     <Container>
       <div className="video-box">
-        <video preload autoPlay loop muted className="video-tag">
+        <video preload="true" autoPlay loop muted className="video-tag">
           <source src="https://jcggl.github.io/publicDrive/homepage_main.webm" type="video/webm" />
         </video>
       </div>
@@ -197,15 +197,15 @@ const Promotion = () => {
           <a className="icon" href="https://twitter.com/beergang_nft" target="_blank">
             <img className="icon_img" src="/config/images/official/icon_twitter.png" />
           </a>
-          <div className="icon">
+          <a className="icon" href="https://discord.com/invite/D6JvCspJ7F" target="_blank">
             <img className="icon_img" src="/config/images/official/icon_discord.png" />
-          </div>
+          </a>
           <a className="icon" href="https://www.instagram.com/beergang_nft/" target="_blank">
             <img className="icon_img" src="/config/images/official/icon_instagram.png" />
           </a>
-          <div className="icon">
+          <a className="icon" href="https://www.youtube.com/channel/UCgaQd_UyhKMGbRuNmRy61nQ" target="_blank">
             <img className="icon_img" src="/config/images/official/icon_video.png" />
-          </div>
+          </a>
         </div>
       </div>
       <div className="beergang">BEERGANG</div>

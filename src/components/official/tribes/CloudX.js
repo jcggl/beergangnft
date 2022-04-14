@@ -85,8 +85,11 @@ const Container = styled.div`
 const CloudX = () => {
   return (
     <Container>
-      <img className="main_img" src="/config/images/official/img_avatar_cloudx.png" />
-      <img className="chat_img" src="/config/images/official/img_avatar_cloudx_chat@3x.png" />
+      {/*<img className="main_img" src="/config/images/official/img_avatar_cloudx.png" />*/}
+      {/*<img className="chat_img" src="/config/images/official/img_avatar_cloudx_chat@3x.png" />*/}
+      <video preload="true" autoPlay loop muted className="video-tag">
+        <source src="https://jcggl.github.io/publicDrive/Avatar_video/maintwitt_blue.webm" type="video/webm" />
+      </video>
       <div className="cloudx_title">
         Cloud X <span className="cloudx_abv">12% ABV</span>
       </div>
