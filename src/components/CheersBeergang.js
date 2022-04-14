@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { RenderIfElse } from './RenderIf'
 
 const Container = styled.div`
   display: flex;
@@ -58,12 +59,26 @@ const Container = styled.div`
 `
 
 const CheersBeergang = () => {
+  const windowSize = window.matchMedia('screen and (max-width: 767px)')
+
   return (
     <Container>
-      <span className="text">
-        Beergang is the&nbsp;<span className="cheers">world's first emotionally interactive full-body 3D</span>
-        &nbsp;NFT avatar
-      </span>
+      <RenderIfElse renderFirst={windowSize.matches}>
+        <span className="text">
+          Beergang is the
+          <br />
+          <span className="cheers">
+            world's first emotionally
+            <br /> interactive full-body 3D
+          </span>
+          <br />
+          NFT avatar
+        </span>
+        <span className="text">
+          Beergang is the&nbsp;<span className="cheers">world's first emotionally interactive full-body 3D</span>
+          &nbsp;NFT avatar
+        </span>
+      </RenderIfElse>
       <div className="bottle_cap">
         <img className="bottle_cap_img" src="/config/images/img_bottle_cap.png" />
       </div>

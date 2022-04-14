@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { RenderIfElse } from './RenderIf'
 
 const Container = styled.div`
   display: flex;
@@ -83,6 +84,8 @@ const Container = styled.div`
 `
 
 const AboutBeergang = () => {
+  const windowSize = window.matchMedia('screen and (max-width: 767px)')
+
   return (
     <Container>
       <div className="title">Cheers to Beergang</div>
@@ -90,25 +93,34 @@ const AboutBeergang = () => {
         <span className="subtitle">The GOOD Web 3.0 Community on Metaverse</span>
       </div>
       <div className="description">
+        <RenderIfElse renderFirst={windowSize}>
+          <div className="texts">
+            Beergang is a collection of 10,000 avatars built on the Homebrew Algorithm created by GoodGang Labs and
+            stored on the Ethereum blockchain network and IPFS. Using beer and pub culture as a motif, Beergang is the
+            world's first emotionally interactive full-body 3D NFT avatar.
+          </div>
+          <div className="texts">
+            Beergang is a collection of 10,000 avatars built on the Homebrew Algorithm created by GoodGang Labs and
+            stored on the Ethereum blockchain network and IPFS.
+            <br />
+            Using beer and pub culture as a motif,
+            <br />
+            Beergang is the world's first emotionally interactive full-body 3D NFT avatar.
+          </div>
+        </RenderIfElse>
         <div className="texts">
-          Beergang is a collection of 10,000 avatars built on the Homebrew Algorithm created by GoodGang Labs and stored
-          on the Ethereum blockchain network and IPFS.
+          Our growing team includes professionals from global top-tier tech companies (Google, Meta, Naver, Line, Snow)
+          with over ten years of experience in Metaverse, Avatar, VR/AR, Community and AI.
         </div>
         <div className="texts">
-          Born amid pandemic, GoodGang Labs is made up of professionals with more than 10 years of experience in
-          Metaverse, Community, Avatar, AI, and AR related projects in global IT top tier companies (Facebook, Google,
-          Naver, Line, Snow, and more).
+          We are backed by partners from Meta, Snap, Naver, Kakao, Planetarium, Kimgisa Lab, and other leading
+          investors.
         </div>
         <div className="texts">
-          Currently, members live and work remotely in major global cities <br />
-          (San Francisco, Seoul, Hawaii, and Vancouver).
+          There will be more Beergang related updates soon
+          <br />
+          STAY TUNED FOR MORE!
         </div>
-
-        <div className="texts">
-          The Beergang character has a unique charm <br />
-          that blends with the various experiences of the members.
-        </div>
-        <div className="texts">There will be more Beergang related updates soon, so please stay tuned!</div>
       </div>
     </Container>
   )
