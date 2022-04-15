@@ -39,8 +39,8 @@ const CommingSoon = () => {
   return (
     <Container>
       <div className="video-box">
-        <video preload="true" autoPlay loop muted className="video-tag">
-          <source src="https://jcggl.github.io/publicDrive/teaser_brewing_video.webm" type="video/webm" />
+        <video preload="true" autoPlay loop muted playsInline className="video-tag">
+          <source src="https://jcggl.github.io/publicDrive/teaser_brewing_video.mp4" type="video/mp4" />
         </video>
       </div>
     </Container>
