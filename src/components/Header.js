@@ -10,13 +10,12 @@ const Container = styled.div`
   width: 100%;
   max-width: 1200px;
   height: 96px;
+  padding: 40px 40px 0;
   color: #ffffff;
   @media (max-width: 767px) {
     max-width: unset;
     height: 62px;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 30px 20px 0;
   }
 
   .logo {
@@ -31,16 +30,24 @@ const Container = styled.div`
   .side_menu {
     display: flex;
     flex-direction: row;
-  }
 
-  .icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 24px;
-    @media (max-width: 767px) {
-      width: 24px;
-      height: 24px;
-      margin-right: 16px;
+    a {
+      .icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 24px;
+        @media (max-width: 767px) {
+          width: 24px;
+          height: 24px;
+          margin-right: 16px;
+        }
+      }
+
+      &:last-child {
+        .icon {
+          margin-right: 0;
+        }
+      }
     }
   }
 
