@@ -6,10 +6,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 1080px;
+  height: 100vh;
 
   @media (max-width: 767px) {
-    height: 640px;
+    height: 100vh;
   }
 
   .video-box {
