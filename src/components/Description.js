@@ -12,6 +12,7 @@ const Container = styled.div`
   line-height: 36px;
   width: 100%;
   max-width: 996px;
+  padding: 0 40px;
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;

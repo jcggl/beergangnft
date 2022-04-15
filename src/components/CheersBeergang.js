@@ -10,8 +10,8 @@ const Container = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 1200px;
-  //height: 303px;
   margin-top: 103px;
+  padding: 0 40px;
   color: #ffffff;
   font-family: Anton;
   font-style: normal;
@@ -22,7 +22,6 @@ const Container = styled.div`
 
   @media (max-width: 767px) {
     max-width: unset;
-    //height: 285px;
     margin-top: 24px;
     padding: 0 20px;
     font-size: 32px;
