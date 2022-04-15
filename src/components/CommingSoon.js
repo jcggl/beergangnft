@@ -39,7 +39,7 @@ const CommingSoon = () => {
   return (
     <Container>
       <div className="video-box">
-        <video preload="true" autoPlay loop muted className="video-tag">
+        <video preload="true" autoPlay loop muted playsInline className="video-tag">
           <source src="https://jcggl.github.io/publicDrive/teaser_brewing_video.webm" type="video/webm" />
         </video>
       </div>
