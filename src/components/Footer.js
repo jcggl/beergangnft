@@ -5,14 +5,14 @@ const Container = styled.div`
   display: flex;
   width: 100%;
   height: 288px;
+  padding: 0 40px;
   background: #ffffff;
   color: #000000;
   justify-content: center;
   @media (max-width: 767px) {
     max-width: unset;
     height: unset;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
   }
 
   .box {
