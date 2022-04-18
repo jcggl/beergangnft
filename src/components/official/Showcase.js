@@ -85,13 +85,13 @@ const Container = styled.div`
   }
 `
 
-const Showcase = () => {
+const Showcase = ({ showcaseRef }) => {
   const onClickImg = () => {
     window.open('https://pleasant-mousy-jackfruit.glitch.me/', '_blank')
   }
 
   return (
-    <Container>
+    <Container ref={showcaseRef}>
       <div className="title">Showcase</div>
       <img src="/config/images/official/showcase_main.png" className="main_image" onClick={onClickImg} />
       <div className="desc">

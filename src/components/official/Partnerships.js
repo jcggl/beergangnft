@@ -122,9 +122,9 @@ const Container = styled.div`
   }
 `
 
-const Partnerships = () => {
+const Partnerships = ({ communityRef }) => {
   return (
-    <Container>
+    <Container ref={communityRef}>
       <div className="title">Partnerships</div>
       <div className="desc">We are partnership gangs. We’re looking for partners for the following areas:</div>
       <div className="box">

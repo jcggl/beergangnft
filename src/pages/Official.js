@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled from 'styled-components'
 import Header from '../components/official/Header'
 import Promotion from '../components/official/Promotion'
@@ -32,20 +32,27 @@ const Container = styled.div`
 `
 
 const Official = () => {
+  const aboutRef = useRef(null)
+  const showcaseRef = useRef(null)
+  const roadmapRef = useRef(null)
+  const communityRef = useRef(null)
+  const teamRef = useRef(null)
+  const refs = [aboutRef, showcaseRef, roadmapRef, communityRef, teamRef]
+
   return (
     <Container>
-      <Header />
+      <Header refs={refs} />
       <Promotion />
       <div className="contents">
         <Intro />
-        <About />
+        <About aboutRef={aboutRef} />
         <Universe />
         <FourTribes />
-        <Showcase />
-        <Roadmap />
-        <Partnerships />
+        <Showcase showcaseRef={showcaseRef} />
+        <Roadmap roadmapRef={roadmapRef} />
+        <Partnerships communityRef={communityRef} />
         <Join />
-        <Team />
+        <Team teamRef={teamRef} />
         <Footer />
       </div>
     </Container>
