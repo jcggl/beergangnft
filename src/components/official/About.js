@@ -186,7 +186,7 @@ const Container = styled.div`
   }
 `
 
-const About = () => {
+const About = ({ aboutRef }) => {
   const [selectedNum, setSelectedNum] = useState(0)
   const onClickNumber = (num) => {
     setSelectedNum(num)
@@ -208,7 +208,7 @@ const About = () => {
     ))
 
   return (
-    <Container>
+    <Container ref={aboutRef}>
       <div className="desc_box">
         <div className="about">Cheers to Beergang</div>
         <div className="desc">

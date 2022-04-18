@@ -186,9 +186,9 @@ const Member = ({ name, role, desc, snsInfo }) => {
   )
 }
 
-const Team = () => {
+const Team = ({ teamRef }) => {
   return (
-    <Container>
+    <Container ref={teamRef}>
       <div className="title">The Team</div>
       <div className="desc">
         Beergang is the first project of GoodGang Labs. Our mission is “To make the world a fun and a better place by

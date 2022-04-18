@@ -53,9 +53,9 @@ const Container = styled.div`
   }
 `
 
-const Roadmap = () => {
+const Roadmap = ({ roadmapRef }) => {
   return (
-    <Container>
+    <Container ref={roadmapRef}>
       <div className="title">Roadmap</div>
       <Flicking bound="true">
         <div className="panel roadmap_panel">
