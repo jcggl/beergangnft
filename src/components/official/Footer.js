@@ -175,7 +175,7 @@ const Footer = () => {
             <a className="img_link" href="https://twitter.com/beergang_nft" target="_blank">
               <img className="icon_twitter" src="/config/images/official/icon_twitter.png" />
             </a>
-            <a className="img_link">
+            <a className="img_link" href="https://discord.com/invite/D6JvCspJ7F" target="_blank">
               <img className="icon_discord" src="/config/images/official/icon_discord.png" />
             </a>
             <a className="img_link" href="https://www.instagram.com/beergang_nft/" target="_blank">

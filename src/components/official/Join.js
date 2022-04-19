@@ -143,15 +143,15 @@ const Join = () => {
           <div>
             <div className="comment">Are your ready to join our Gang?</div>
             <div className="icon_box">
-              <div className="icon">
+              <a className="icon" href="https://twitter.com/beergang_nft" target="_blank">
                 <img className="icon_img" src="/config/images/official/icon_twitter.png" />
-              </div>
-              <div className="icon">
+              </a>
+              <a className="icon" href="https://discord.com/invite/D6JvCspJ7F" target="_blank">
                 <img className="icon_img" src="/config/images/official/icon_discord.png" />
-              </div>
-              <div className="icon">
+              </a>
+              <a className="icon" href="https://www.instagram.com/beergang_nft/" target="_blank">
                 <img className="icon_img" src="/config/images/official/icon_instagram.png" />
-              </div>
+              </a>
             </div>
           </div>
         </div>

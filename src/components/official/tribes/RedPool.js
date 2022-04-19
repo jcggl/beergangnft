@@ -85,10 +85,8 @@ const Container = styled.div`
 const RedPool = () => {
   return (
     <Container>
-      {/*<img className="main_img" src="/config/images/official/img_avatar_redpool.png" />*/}
-      {/*<img className="chat_img" src="/config/images/official/img_avatar_redpool_chat@3x.png" />*/}
-      <video preload="true" autoPlay loop muted className="video-tag">
-        <source src="https://jcggl.github.io/publicDrive/Avatar_video/maintwitt_red.webm" type="video/webm" />
+      <video preload="true" autoPlay playsInline loop muted className="video-tag">
+        <source src="https://jcggl.github.io/publicDrive/main_red.mp4" type="video/mp4" />
       </video>
       <div className="redpool_title">
         RedPool <span className="redpool_abv">5% ABV</span>
