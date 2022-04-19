@@ -185,8 +185,8 @@ const Promotion = () => {
   return (
     <Container>
       <div className="video-box">
-        <video preload="true" autoPlay loop muted className="video-tag">
-          <source src="https://jcggl.github.io/publicDrive/homepage_main.webm" type="video/webm" />
+        <video preload="true" autoPlay playsInline loop muted className="video-tag">
+          <source src="https://jcggl.github.io/publicDrive/homepage_main.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="links">
