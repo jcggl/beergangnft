@@ -7,36 +7,14 @@ const Container = styled.div`
   max-width: 588px;
   margin-bottom: 60px;
 
+  @media (max-width: 992px) {
+    max-width: 324px;
+    margin-bottom: 18px;
+  }
+
   @media (max-width: 767px) {
     max-width: 264px;
     margin-bottom: 0;
-  }
-
-  .main_img {
-    width: 588px;
-    height: 588px;
-    margin-top: 74px;
-    margin-bottom: 38px;
-
-    @media (max-width: 767px) {
-      width: 264px;
-      height: 264px;
-      margin-top: 34px;
-      margin-bottom: 16px;
-    }
-  }
-
-  .chat_img {
-    width: 340px;
-    height: 182px;
-    position: absolute;
-    margin-left: 43px;
-
-    @media (max-width: 767px) {
-      width: 183px;
-      height: 98px;
-      margin-left: 16px;
-    }
   }
 
   .redpool_title {
@@ -92,12 +70,15 @@ const RedPool = () => {
         RedPool <span className="redpool_abv">5% ABV</span>
       </div>
       <div className="redpool_desc">
-        RedPool’s cells developed on the far left stream of the Herong River where it was abundant with fluorite and
-        Fe+3. Such density formed the citrus skin color and their active personality. With much curiosity and eagerness
-        to challenge, they are now scattered all over the continent, but their ancestors started their livelihood in a
-        tropical climate. Those who define their lives as ‘travelers’ rather than ‘who wander’ enjoy exploring the new
-        culture and expressing their experiences. With these characteristics, they are leading the new trend of
-        Beergang. The items that they wore formed followers and continued to sell out.
+        Last but not least, the last remaining cell was swept through the river due to an unusual wave of tide. It was
+        almost like a sea monster swallowing the cell alive. Even the sodium level was high to the point where it
+        increase the blood pressure for Red Pool. Such temper and high blood pressure were embedded in Red Pool’s
+        personality. They live in the southern part of the continent around the huge volcanic region called Flamin Hot
+        where the origin and history of Alcohol Planet started. Like volcanoes that could erupt anytime, they are always
+        angry and excited. They are also physically strong as well. They are really passionate as well as they work out
+        all the time to suppress their anger. <br />
+        <br />
+        ⚠️Caution: If you see Cloud X and Red Pool together, leave immediately. They are the polar opposite.
       </div>
     </Container>
   )

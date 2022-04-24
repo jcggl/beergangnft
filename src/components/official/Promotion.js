@@ -45,6 +45,11 @@ const Container = styled.div`
     margin-left: 120px;
     z-index: 1;
 
+    @media (max-width: 992px) {
+      margin-top: 660px;
+      margin-left: 50px;
+    }
+
     @media (max-width: 767px) {
       margin-top: 362px;
       margin-left: 20px;
@@ -57,6 +62,10 @@ const Container = styled.div`
     margin-top: 12px;
     margin-left: 120px;
     z-index: 1;
+
+    @media (max-width: 992px) {
+      margin-left: 50px;
+    }
 
     @media (max-width: 767px) {
       margin-left: 20px;
@@ -75,8 +84,13 @@ const Container = styled.div`
       -webkit-text-fill-color: transparent;
     }
 
+    @media (max-width: 992px) {
+      margin-left: 50px;
+    }
+
     @media (max-width: 767px) {
       margin-left: 20px;
+      margin-bottom: 40px;
     }
   }
 
@@ -103,15 +117,20 @@ const Container = styled.div`
     color: #000000;
     z-index: 1;
 
+    @media (max-width: 992px) {
+      display: none;
+    }
+
     @media (max-width: 767px) {
-      margin-top: 18px;
-      margin-left: 20px;
-      margin-bottom: 32px;
-      width: 174px;
-      height: 40px;
-      font-size: 14px;
-      line-height: 18px;
-      font-weight: 600;
+      display: none;
+      //margin-top: 18px;
+      //margin-left: 20px;
+      //margin-bottom: 32px;
+      //width: 174px;
+      //height: 40px;
+      //font-size: 14px;
+      //line-height: 18px;
+      //font-weight: 600;
     }
 
     .wallet_icon {
@@ -135,6 +154,11 @@ const Container = styled.div`
     padding-top: 136px;
     padding-right: 120px;
     z-index: 5;
+
+    @media (max-width: 992px) {
+      padding-top: 100px;
+      padding-right: 50px;
+    }
 
     @media (max-width: 767px) {
       padding-top: 151px;

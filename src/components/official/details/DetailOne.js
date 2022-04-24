@@ -10,7 +10,8 @@ const DetailOne = () => {
     }
     .mobile_image {
       display: none;
-      width: 320px;
+      width: 100%;
+      max-width: 320px;
       margin-top: 13px;
     }
     @media (max-width: 992px) {

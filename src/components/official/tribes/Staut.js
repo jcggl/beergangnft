@@ -7,36 +7,14 @@ const Container = styled.div`
   max-width: 588px;
   margin-bottom: 60px;
 
+  @media (max-width: 992px) {
+    max-width: 324px;
+    margin-bottom: 18px;
+  }
+
   @media (max-width: 767px) {
     max-width: 264px;
     margin-bottom: 0;
-  }
-
-  .main_img {
-    width: 588px;
-    height: 588px;
-    margin-top: 56px;
-    margin-bottom: 38px;
-
-    @media (max-width: 767px) {
-      width: 264px;
-      height: 264px;
-      margin-top: 34px;
-      margin-bottom: 16px;
-    }
-  }
-
-  .chat_img {
-    width: 254px;
-    height: 226px;
-    position: absolute;
-    margin-left: 61px;
-
-    @media (max-width: 767px) {
-      width: 124px;
-      height: 110px;
-      margin-left: 16px;
-    }
   }
 
   .staut_title {

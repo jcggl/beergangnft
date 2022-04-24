@@ -21,6 +21,12 @@ const Container = styled.div`
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     z-index: 1;
 
+    @media (max-width: 992px) {
+      font-size: 40px;
+      line-height: 50px;
+      margin-left: 24px;
+    }
+
     @media (max-width: 767px) {
       font-size: 28px;
       line-height: 40px;
@@ -37,6 +43,11 @@ const Container = styled.div`
     margin-top: -34px;
     padding: 70px 32px 73px 32px;
 
+    @media (max-width: 992px) {
+      margin-top: -25px;
+      padding: 50px 24px;
+    }
+
     @media (max-width: 767px) {
       margin-top: -20px;
       padding: 32px 16px;
@@ -49,6 +60,11 @@ const Container = styled.div`
       font-size: 30px;
       line-height: 50px;
       margin-bottom: 10px;
+
+      @media (max-width: 992px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
 
       @media (max-width: 767px) {
         font-size: 16px;
@@ -65,6 +81,12 @@ const Container = styled.div`
       line-height: 30px;
       margin-bottom: 21px;
 
+      @media (max-width: 992px) {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+
       @media (max-width: 767px) {
         font-size: 12px;
         line-height: 20px;
@@ -76,6 +98,12 @@ const Container = styled.div`
       width: 178px;
       height: 46px;
       margin-bottom: 60px;
+
+      @media (max-width: 992px) {
+        width: 136px;
+        height: 35px;
+        margin-bottom: 40px;
+      }
 
       @media (max-width: 767px) {
         width: 120px;

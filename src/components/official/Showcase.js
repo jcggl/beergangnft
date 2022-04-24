@@ -80,7 +80,8 @@ const Container = styled.div`
     }
     @media (max-width: 767px) {
       margin-top: 20px;
-      width: 320px;
+      width: 100%;
+      max-width: 320px;
     }
   }
 `

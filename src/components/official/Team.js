@@ -8,6 +8,10 @@ const Container = styled.div`
   max-width: 1200px;
   padding: 122px 0;
 
+  @media (max-width: 992px) {
+    padding: 66px 50px;
+  }
+
   @media (max-width: 767px) {
     padding: 38px 0;
   }
@@ -20,6 +24,13 @@ const Container = styled.div`
     line-height: 120px;
     color: #ffffff;
     margin-bottom: 40px;
+
+    @media (max-width: 992px) {
+      font-size: 80px;
+      line-height: 100px;
+      letter-spacing: 0.03em;
+      margin-bottom: 20px;
+    }
 
     @media (max-width: 767px) {
       font-size: 48px;
@@ -38,6 +49,12 @@ const Container = styled.div`
     color: #a1a1aa;
     margin-bottom: 90px;
 
+    @media (max-width: 992px) {
+      font-size: 16px;
+      line-height: 32px;
+      margin-bottom: 46px;
+    }
+
     @media (max-width: 767px) {
       font-size: 12px;
       line-height: 20px;
@@ -49,6 +66,11 @@ const Container = styled.div`
   .members {
     display: flex;
     flex-wrap: wrap;
+
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
     @media (max-width: 767px) {
       flex-wrap: nowrap;
@@ -63,6 +85,13 @@ const MemberContainer = styled.div`
   flex-direction: column;
   width: 384px;
   height: 270px;
+
+  @media (max-width: 992px) {
+    width: unset;
+    height: unset;
+    min-width: 324px;
+    margin-bottom: 40px;
+  }
 
   @media (max-width: 767px) {
     min-width: 208px;
@@ -79,6 +108,12 @@ const MemberContainer = styled.div`
     color: #ff6700;
     margin-bottom: 14px;
 
+    @media (max-width: 992px) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
     @media (max-width: 767px) {
       font-size: 16px;
       line-height: 24px;
@@ -88,6 +123,10 @@ const MemberContainer = styled.div`
 
   .role {
     margin-bottom: 10px;
+
+    @media (max-width: 992px) {
+      margin-bottom: 8px;
+    }
 
     @media (max-width: 767px) {
       margin-bottom: 4px;
@@ -105,6 +144,11 @@ const MemberContainer = styled.div`
       color: #ffffff;
       padding: 6px 12px;
 
+      @media (max-width: 992px) {
+        font-size: 12px;
+        line-height: 20px;
+      }
+
       @media (max-width: 767px) {
         font-size: 12px;
         line-height: 20px;
@@ -121,6 +165,12 @@ const MemberContainer = styled.div`
     line-height: 30px;
     color: #ffffff;
     margin-bottom: 10px;
+
+    @media (max-width: 992px) {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 4px;
+    }
 
     @media (max-width: 767px) {
       font-size: 12px;
@@ -192,12 +242,15 @@ const Team = ({ teamRef }) => {
       <div className="title">The Team</div>
       <div className="desc">
         Beergang is the first project of GoodGang Labs. Our mission is “To make the world a fun and a better place by
-        helping people express their true identity and use their passion and talents to generate legitimate revenue.”
+        helping people express their true identity and use their passion and talents to generate legitimate revenue.”{' '}
+        <br />
+        <br />
+        We are backed by partners from Meta, Snap, Naver, Kakao, Planetarium, Kimgisa Lab, and other leading investors.
         Born amid pandemic, GoodGang Labs is made up of professionals with more than 10 years of experience in
-        Metaverse, Community, Avatar, and AR related projects in global IT top tier companies (Facebook, Google, Naver,
-        Line, Snow, and more.) Currently, members live and work remotely in major global cities (San Francisco, Seoul,
-        Hawaii, and Vancouver). The Beergang character has a unique charm that blends with the various experiences of
-        the members.
+        Metaverse, Community, Avatar, AI and AR/VR related projects in global top tier tech companies (Meta, Google,
+        Naver, Line, Snow, and more). Currently, members live and work remotely in major global cities (San Francisco,
+        Seoul, Hawaii, and Vancouver). The Beergang character has a unique charm that blends with the various
+        experiences of the members.
       </div>
       <div className="members">
         <Member

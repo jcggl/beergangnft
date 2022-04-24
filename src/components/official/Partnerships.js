@@ -8,6 +8,10 @@ const Container = styled.div`
   color: #ffffff;
   max-width: 1200px;
 
+  @media (max-width: 992px) {
+    padding: 0 50px;
+  }
+
   @media (max-width: 767px) {
     max-width: unset;
     padding-left: 20px;
@@ -22,6 +26,12 @@ const Container = styled.div`
     line-height: 84px;
     margin-bottom: 12px;
 
+    @media (max-width: 992px) {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 10px;
+    }
+
     @media (max-width: 767px) {
       font-size: 28px;
       line-height: 40px;
@@ -33,9 +43,16 @@ const Container = styled.div`
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
+    color: #e4e4e7;
     font-size: 28px;
     line-height: 42px;
     margin-bottom: 49px;
+
+    @media (max-width: 992px) {
+      font-size: 16px;
+      line-height: 32px;
+      margin-bottom: 30px;
+    }
 
     @media (max-width: 767px) {
       font-size: 14px;
@@ -52,6 +69,11 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 992px) {
+      height: unset;
+      padding: 14px;
+    }
 
     @media (max-width: 767px) {
       flex-direction: column;
@@ -73,6 +95,12 @@ const Container = styled.div`
       text-align: center;
       color: #ffffff;
 
+      @media (max-width: 992px) {
+        width: unset;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
       @media (max-width: 767px) {
         width: unset;
         font-size: 18px;
@@ -87,6 +115,12 @@ const Container = styled.div`
         width: 384px;
         height: 288px;
         margin-bottom: 25px;
+
+        @media (max-width: 992px) {
+          width: 100%;
+          height: unset;
+          margin-bottom: 12px;
+        }
 
         @media (max-width: 767px) {
           width: 100%;
@@ -106,6 +140,13 @@ const Container = styled.div`
     color: #e4e4e7;
     margin-top: 46px;
     margin-bottom: 122px;
+
+    @media (max-width: 992px) {
+      margin-top: 10px;
+      margin-bottom: 66px;
+      font-size: 16px;
+      line-height: 32px;
+    }
 
     @media (max-width: 767px) {
       margin-top: 16px;
