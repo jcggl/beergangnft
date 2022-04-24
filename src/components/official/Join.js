@@ -7,6 +7,10 @@ const Container = styled.div`
   width: 100%;
   margin-top: 128px;
 
+  @media (max-width: 992px) {
+    margin-top: 42px;
+  }
+
   @media (max-width: 767px) {
     margin-top: 131px;
   }
@@ -21,6 +25,11 @@ const Container = styled.div`
     background-image: url('/config/images/official/img_comm_bg.png');
     background-size: cover;
 
+    @media (max-width: 992px) {
+      height: 274px;
+      padding: 0 20px;
+    }
+
     @media (max-width: 767px) {
       height: 274px;
       padding-left: 20px;
@@ -33,16 +42,28 @@ const Container = styled.div`
       width: 100%;
       align-items: center;
 
+      @media (max-width: 992px) {
+        max-width: unset;
+        padding: 0 10px 0 30px;
+      }
+
       @media (max-width: 767px) {
         flex-direction: column;
         justify-content: center;
         max-width: unset;
+        padding: 0;
       }
 
       .beer_img {
         width: 530px;
         height: 424px;
         margin-right: 82px;
+
+        @media (max-width: 992px) {
+          width: 275px;
+          height: 220px;
+          margin-right: 45px;
+        }
 
         @media (max-width: 767px) {
           width: 246px;
@@ -53,6 +74,7 @@ const Container = styled.div`
       }
 
       .comment {
+        width: unset;
         font-family: 'Komika Axis';
         font-style: normal;
         font-weight: 400;
@@ -61,7 +83,15 @@ const Container = styled.div`
         color: #000000;
         margin-bottom: 42px;
 
+        @media (max-width: 992px) {
+          width: 350px;
+          font-size: 28px;
+          line-height: 44px;
+          margin-bottom: 20px;
+        }
+
         @media (max-width: 767px) {
+          width: unset;
           font-size: 28px;
           line-height: 43px;
           text-align: center;
@@ -86,6 +116,11 @@ const Container = styled.div`
           border-radius: 2px;
           background-color: #000000;
           cursor: pointer;
+
+          @media (max-width: 992px) {
+            width: 42px;
+            height: 42px;
+          }
 
           @media (max-width: 767px) {
             width: 44px;

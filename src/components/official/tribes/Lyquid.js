@@ -7,36 +7,14 @@ const Container = styled.div`
   max-width: 588px;
   margin-bottom: 60px;
 
+  @media (max-width: 992px) {
+    max-width: 324px;
+    margin-bottom: 18px;
+  }
+
   @media (max-width: 767px) {
     max-width: 264px;
     margin-bottom: 0;
-  }
-
-  .main_img {
-    width: 588px;
-    height: 588px;
-    margin-top: 74px;
-    margin-bottom: 38px;
-
-    @media (max-width: 767px) {
-      width: 264px;
-      height: 264px;
-      margin-top: 34px;
-      margin-bottom: 16px;
-    }
-  }
-
-  .chat_img {
-    width: 288px;
-    height: 190px;
-    position: absolute;
-    margin-left: 264px;
-
-    @media (max-width: 767px) {
-      width: 146px;
-      height: 96px;
-      margin-left: 106px;
-    }
   }
 
   .lyquid_title {

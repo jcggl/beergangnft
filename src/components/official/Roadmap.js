@@ -16,6 +16,12 @@ const Container = styled.div`
   max-width: 1200px;
   margin-bottom: 164px;
 
+  @media (max-width: 992px) {
+    max-width: unset;
+    padding: 0 50px;
+    margin-bottom: 65px;
+  }
+
   @media (max-width: 767px) {
     max-width: unset;
     padding-left: 20px;
@@ -32,6 +38,12 @@ const Container = styled.div`
     font-weight: 400;
     font-size: 120px;
     line-height: 120px;
+
+    @media (max-width: 992px) {
+      font-size: 80px;
+      line-height: 100px;
+      margin-bottom: 50px;
+    }
 
     @media (max-width: 767px) {
       margin-top: 38px;

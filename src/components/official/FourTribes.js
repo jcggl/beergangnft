@@ -10,11 +10,15 @@ const Container = styled.div`
   color: #ffffff;
   align-items: center;
   max-width: 1200px;
+  padding: 0;
 
+  @media (max-width: 992px) {
+    max-width: 770px;
+    padding: 0 50px;
+  }
   @media (max-width: 767px) {
     max-width: unset;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
   }
 
   .title {
@@ -27,6 +31,11 @@ const Container = styled.div`
     line-height: 83px;
     letter-spacing: 0.03em;
 
+    @media (max-width: 992px) {
+      margin-top: 44px;
+      font-size: 40px;
+      line-height: 50px;
+    }
     @media (max-width: 767px) {
       margin-top: 32px;
       font-size: 24px;
@@ -44,6 +53,12 @@ const Container = styled.div`
     line-height: 40px;
     color: #e4e4e7;
 
+    @media (max-width: 992px) {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 32px;
+    }
+
     @media (max-width: 767px) {
       margin-top: 10px;
       font-size: 12px;
@@ -58,6 +73,10 @@ const Container = styled.div`
     display: flex;
     margin-bottom: 103px;
 
+    @media (max-width: 992px) {
+      margin-top: 50px;
+    }
+
     @media (max-width: 767px) {
       height: unset;
       overflow-x: auto;
@@ -66,6 +85,10 @@ const Container = styled.div`
 
     .lyquid_wrapper {
       position: absolute;
+
+      @media (max-width: 992px) {
+        position: absolute;
+      }
 
       @media (max-width: 767px) {
         position: relative;
@@ -76,6 +99,11 @@ const Container = styled.div`
       position: absolute;
       margin-left: 612px;
       margin-top: 194px;
+
+      @media (max-width: 992px) {
+        position: absolute;
+        margin-left: 345px;
+      }
 
       @media (max-width: 767px) {
         position: relative;
@@ -99,6 +127,11 @@ const Container = styled.div`
       position: absolute;
       margin-left: 612px;
       margin-top: 1340px;
+
+      @media (max-width: 992px) {
+        position: absolute;
+        margin-left: 345px;
+      }
 
       @media (max-width: 767px) {
         position: relative;

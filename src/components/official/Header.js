@@ -8,8 +8,12 @@ const Container = styled.div`
   width: 100%;
   height: 96px;
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 10;
+
+  @media (max-width: 992px) {
+    height: 74px;
+  }
 
   @media (max-width: 767px) {
     height: 60px;
@@ -18,57 +22,82 @@ const Container = styled.div`
   .box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     max-width: 1680px;
-    margin-left: 120px;
-    margin-right: 120px;
+    padding: 0 120px;
 
-    @media (max-width: 767px) {
-      margin-left: 20px;
-      margin-right: 20px;
+    @media (max-width: 992px) {
+      padding: 0 50px;
     }
-  }
-
-  .logo {
-    width: 184px;
-    height: 27px;
-    margin-top: 45px;
-
     @media (max-width: 767px) {
-      width: 109px;
-      height: 16px;
-      margin-top: 22px;
+      padding: 0 20px;
     }
-  }
 
-  .menu_button {
-    display: none;
+    .logo {
+      width: 184px;
+      height: 27px;
+      margin-top: 10px;
 
-    @media (max-width: 767px) {
-      display: flex;
-      width: 24px;
-      height: 24px;
-      margin-top: 18px;
+      @media (max-width: 992px) {
+        width: 150px;
+        height: 22px;
+        margin-top: 0;
+      }
+
+      @media (max-width: 767px) {
+        width: 109px;
+        height: 16px;
+        margin-top: 0;
+        // padding-top: 22px;
+      }
     }
-  }
 
-  .side {
-    display: flex;
-
-    @media (max-width: 767px) {
+    .menu_button {
       display: none;
+
+      @media (max-width: 992px) {
+        display: flex;
+      }
+      @media (max-width: 767px) {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        // margin-top: 18px;
+      }
+    }
+
+    .side {
+      display: flex;
+      margin-top: 10px;
+
+      @media (max-width: 992px) {
+        display: none;
+      }
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
   }
 
   .mobile_side {
     display: none;
 
+    @media (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+      top: 74px;
+      padding-right: 50px;
+      background: rgba(0, 0, 0, 0.8);
+    }
     @media (max-width: 767px) {
       display: flex;
       flex-direction: column;
       position: absolute;
       width: 100%;
-      top: 44px;
+      top: 60px;
       padding-left: 20px;
       padding-right: 20px;
       background: rgba(0, 0, 0, 0.8);
@@ -81,17 +110,30 @@ const Container = styled.div`
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-    margin-top: 50px;
     margin-right: 24px;
-    :last-child {
-      margin-right: 0;
-    }
+    // &:last-child {
+    //   margin-right: 0;
+    // }
 
+    @media (max-width: 992px) {
+      font-size: 44px;
+      line-height: 60px;
+      text-align: right;
+      margin-top: 24px;
+      margin-right: 0;
+      &:last-child {
+        margin-bottom: 24px;
+      }
+    }
     @media (max-width: 767px) {
       font-size: 24px;
+      line-height: 22px;
       text-align: right;
       margin-top: 32px;
       margin-right: 0;
+      &:last-child {
+        margin-bottom: 24px;
+      }
     }
   }
 `

@@ -6,25 +6,25 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.beergang.xyz/</loc>
-    <lastmod>2022-04-19T09:00:00+00:00</lastmod>
+    <lastmod>2022-04-24T09:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0000</priority>
   </url>
   <url>
     <loc>https://www.beergang.xyz/official</loc>
-    <lastmod>2022-04-19T09:00:00+00:00</lastmod>
+    <lastmod>2022-04-24T09:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0000</priority>
   </url>
   <url>
     <loc>https://www.beergang.xyz/teaser</loc>
-    <lastmod>2022-04-19T09:00:00+00:00</lastmod>
+    <lastmod>2022-04-24T09:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0000</priority>
   </url>
   <url>
     <loc>https://www.beergang.xyz/terms</loc>
-    <lastmod>2022-04-19T09:00:00+00:00</lastmod>
+    <lastmod>2022-04-24T09:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0000</priority>
   </url>
