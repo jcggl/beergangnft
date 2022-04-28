@@ -111,6 +111,7 @@ const Container = styled.div`
     font-size: 18px;
     line-height: 22px;
     margin-right: 24px;
+    cursor: pointer;
     // &:last-child {
     //   margin-right: 0;
     // }

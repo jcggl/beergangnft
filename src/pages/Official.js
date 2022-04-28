@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import styled from 'styled-components'
 import Header from '../components/official/Header'
 import Promotion from '../components/official/Promotion'
+import Floatings from '../components/official/Floatings'
 import Intro from '../components/official/Intro'
 import About from '../components/official/About'
 import Universe from '../components/official/Universe'
@@ -43,6 +44,7 @@ const Official = () => {
     <Container>
       <Header refs={refs} />
       <Promotion />
+      <Floatings />
       <div className="contents">
         <Intro />
         <About aboutRef={aboutRef} />
