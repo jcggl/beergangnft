@@ -67,7 +67,7 @@ const RedPool = () => {
         <source src="https://jcggl.github.io/publicDrive/main_red.mp4" type="video/mp4" />
       </video>
       <div className="redpool_title">
-        RedPool <span className="redpool_abv">5% ABV</span>
+        RedPool <span className="redpool_abv">67.5% ABV</span>
       </div>
       <div className="redpool_desc">
         Last but not least, the last remaining cell was swept through the river due to an unusual wave of tide. It was
