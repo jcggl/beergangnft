@@ -4,15 +4,18 @@ import styled from 'styled-components'
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  width: 40vw;
   max-width: 588px;
   margin-bottom: 60px;
 
   @media (max-width: 992px) {
+    width: unset;
     max-width: 324px;
     margin-bottom: 18px;
   }
 
   @media (max-width: 767px) {
+    width: unset;
     max-width: 264px;
     margin-bottom: 0;
   }

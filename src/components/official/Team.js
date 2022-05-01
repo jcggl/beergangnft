@@ -351,6 +351,24 @@ const Team = ({ teamRef }) => {
             desc: 'Love traveling, cafe hopping (But first, Coffee)',
           }}
         />
+        <Member
+          {...{
+            name: 'ycyhw',
+            role: 'Community / Music',
+            desc: 'Musician by day, an NFT trader by night',
+            snsInfo: {
+              instagram: 'instagram',
+              twitter: 'twitter',
+            },
+          }}
+        />
+        <Member
+          {...{
+            name: 'Moooo',
+            role: '3D Art',
+            desc: 'Realistic Dreamer',
+          }}
+        />
       </div>
     </Container>
   )
