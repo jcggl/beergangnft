@@ -10,7 +10,7 @@ const Container = styled.div`
   color: #ffffff;
   align-items: center;
   max-width: 1200px;
-  padding: 0;
+  padding: 0 50px;
 
   @media (max-width: 992px) {
     max-width: 770px;
@@ -68,6 +68,7 @@ const Container = styled.div`
   }
 
   .tribes {
+    position: relative;
     width: 100%;
     height: 2516px;
     display: flex;
@@ -97,7 +98,7 @@ const Container = styled.div`
 
     .staut_wrapper {
       position: absolute;
-      margin-left: 612px;
+      margin-left: min(calc(40vw + 20px), 612px);
       margin-top: 194px;
 
       @media (max-width: 992px) {
@@ -125,7 +126,7 @@ const Container = styled.div`
 
     .redpool_wrapper {
       position: absolute;
-      margin-left: 612px;
+      margin-left: min(calc(40vw + 20px), 612px);
       margin-top: 1340px;
 
       @media (max-width: 992px) {
