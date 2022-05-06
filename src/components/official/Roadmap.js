@@ -13,7 +13,7 @@ const Container = styled.div`
   z-index: 1;
   color: #ffffff;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1300px;
   margin-bottom: 164px;
   padding: 0 50px;
 

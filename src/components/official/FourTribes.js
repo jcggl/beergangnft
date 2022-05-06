@@ -9,7 +9,7 @@ const Container = styled.div`
   height: 100%;
   color: #ffffff;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 0 50px;
 
   @media (max-width: 992px) {
