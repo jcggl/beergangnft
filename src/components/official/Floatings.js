@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import useAudio from '../../hooks/useAudio'
+import music from '../../statics/musics/Beer_Gang_M1NU.mp3'
 
 const Container = styled.div`
   position: fixed;
@@ -93,9 +95,9 @@ const Container = styled.div`
           background: url('/config/images/official/icon_prev_music.png');
           background-size: cover;
         }
-        .stop_btn {
+        .play_pause_btn {
           margin: 0 4px;
-          background: url('/config/images/official/icon_stop.png');
+          background-color: #000000;
           background-size: cover;
         }
         .next_btn {
@@ -130,6 +132,16 @@ const Container = styled.div`
 
 const Floatings = () => {
   const [musicBox, setMusicBox] = useState(false)
+  const [musicNum, setMusicNum] = useState(0)
+  const [playing, toggle] = useAudio({ url: music, loop: true })
+  const songs = [
+    {
+      title: 'Beer Gang',
+      artist: 'M1NU',
+      src: 'statics/musics/Beer_Gang_M1NU.mp3',
+    },
+  ]
+
   const onHoverMusicBox = () => {
     setMusicBox(true)
   }
@@ -148,13 +160,21 @@ const Floatings = () => {
           <div className="large_music_box">
             <img className="music_icon" src="/config/images/official/icon_music.png" />
             <div className="music_info">
-              <p className="title">TitleTitleTitle</p>
-              <p className="artist">ArtistArtistArtist</p>
+              <p className="title">{songs[musicNum].title}</p>
+              <p className="artist">{songs[musicNum].artist}</p>
             </div>
             <div className="buttons">
-              <button className="prev_btn" />
-              <button className="stop_btn" />
-              <button className="next_btn" />
+              {/*<button className="prev_btn" />*/}
+              <button
+                className="play_pause_btn"
+                onClick={toggle}
+                style={{
+                  backgroundImage: playing
+                    ? "url('/config/images/official/icon_pause.png')"
+                    : "url('/config/images/official/icon_play.png')",
+                }}
+              />
+              {/*<button className="next_btn" />*/}
             </div>
           </div>
         )}

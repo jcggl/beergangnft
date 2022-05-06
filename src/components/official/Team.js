@@ -6,7 +6,7 @@ const Container = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1200px;
-  padding: 122px 0;
+  padding: 122px 50px;
 
   @media (max-width: 992px) {
     padding: 66px 50px;
@@ -66,6 +66,7 @@ const Container = styled.div`
   .members {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     @media (max-width: 992px) {
       flex-wrap: wrap;

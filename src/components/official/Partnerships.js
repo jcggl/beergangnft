@@ -7,6 +7,7 @@ const Container = styled.div`
   width: 100%;
   color: #ffffff;
   max-width: 1200px;
+  padding: 0 50px;
 
   @media (max-width: 992px) {
     padding: 0 50px;
@@ -83,7 +84,7 @@ const Container = styled.div`
     }
 
     .partner_item {
-      width: 384px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -112,8 +113,10 @@ const Container = styled.div`
       }
 
       img {
-        width: 384px;
-        height: 288px;
+        //height: 288px;
+        max-width: 384px;
+        width: 30vw;
+        height: auto;
         margin-bottom: 25px;
 
         @media (max-width: 992px) {

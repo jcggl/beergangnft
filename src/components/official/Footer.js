@@ -7,7 +7,7 @@ const Footer = () => {
     flex-flow: column nowrap;
     width: 100%;
     max-width: 1200px;
-    padding: 257px 0 43px;
+    padding: 257px 50px 43px;
     margin-top: 0;
     @media (max-width: 992px) {
       padding: 120px 50px 24px;
