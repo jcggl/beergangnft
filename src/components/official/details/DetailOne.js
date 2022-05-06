@@ -5,7 +5,8 @@ const DetailOne = () => {
   const Container = styled.div`
     .desktop_image {
       display: block;
-      width: 730px;
+      max-width: 730px;
+      width: 100%;
       margin: 85px 65px 0 auto;
     }
     .mobile_image {

@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /teaser/kr
+Disallow: /official
 Sitemap: https://www.beergang.xyz/sitemap.xml

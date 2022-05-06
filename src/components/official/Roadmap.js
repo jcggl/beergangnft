@@ -15,6 +15,7 @@ const Container = styled.div`
   align-items: center;
   max-width: 1200px;
   margin-bottom: 164px;
+  padding: 0 50px;
 
   @media (max-width: 992px) {
     max-width: unset;

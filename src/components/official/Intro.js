@@ -6,7 +6,7 @@ const Container = styled.div`
   flex-direction: column;
   width: 100%;
   height: 760px;
-  padding: 0 20px;
+  padding: 0 50px;
   background: linear-gradient(182.44deg, #ff6d1b 5.6%, #ff4b32 46.82%, #000000 88.04%);
   align-items: center;
   text-align: center;
