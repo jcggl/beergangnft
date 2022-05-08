@@ -7,7 +7,6 @@ import Intro from '../components/official/Intro'
 import About from '../components/official/About'
 import Universe from '../components/official/Universe'
 import FourTribes from '../components/official/FourTribes'
-import Showcase from '../components/official/Showcase'
 import Roadmap from '../components/official/Roadmap'
 import Partnerships from '../components/official/Partnerships'
 import Join from '../components/official/Join'
@@ -34,11 +33,10 @@ const Container = styled.div`
 
 const Official = () => {
   const aboutRef = useRef(null)
-  const showcaseRef = useRef(null)
   const roadmapRef = useRef(null)
   const communityRef = useRef(null)
   const teamRef = useRef(null)
-  const refs = [aboutRef, showcaseRef, roadmapRef, communityRef, teamRef]
+  const refs = [aboutRef, roadmapRef, communityRef, teamRef]
 
   return (
     <Container>
@@ -50,7 +48,6 @@ const Official = () => {
         <About aboutRef={aboutRef} />
         <Universe />
         <FourTribes />
-        <Showcase showcaseRef={showcaseRef} />
         <Roadmap roadmapRef={roadmapRef} />
         <Partnerships communityRef={communityRef} />
         <Join />

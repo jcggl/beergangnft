@@ -40,13 +40,13 @@ const Container = styled.div`
 const Universe = () => {
   return (
     <Container>
-      <img src="/config/images/official/beergang_universe.png" alt={'beergang_universe'} />
       <video preload="true" autoPlay playsInline loop muted={true} className="video-tag">
         <source src="https://jcggl.github.io/publicDrive/v0426_Univ_horizontal.mp4" type="video/mp4" />
       </video>
       <video preload="true" autoPlay playsInline loop muted={true} className="video-tag_mobile">
         <source src="https://jcggl.github.io/publicDrive/v0426_Univ_vertical.mp4" type="video/mp4" />
       </video>
+      <img src="/config/images/official/beergang_universe.png" alt={'beergang_universe'} />
     </Container>
   )
 }

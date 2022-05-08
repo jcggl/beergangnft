@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Marquee from 'react-fast-marquee'
 
 const Container = styled.div`
   display: flex;
@@ -147,29 +148,43 @@ const Container = styled.div`
     }
   }
 
-  .cheers_text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 74px;
-    font-family: 'Anton';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
-    color: #ff6700;
+  .cheers_container {
+    margin-top: 10px;
     margin-bottom: 128px;
-
     @media (max-width: 767px) {
-      height: 52px;
-      font-size: 14px;
-      line-height: 24px;
       margin-bottom: 26px;
+    }
+    .cheers {
+      width: 302px;
+
+      @media (max-width: 992px) {
+        width: 140px;
+      }
     }
   }
 `
 
 const Join = () => {
+  const MarqueeItem = () => {
+    let itemArr = []
+    let cheersImgSize
+    if (window.innerWidth > 992) {
+      cheersImgSize = 300
+    } else {
+      cheersImgSize = 140
+    }
+    for (let i = 0; i < window.innerWidth / cheersImgSize + 1; i++) {
+      itemArr.push(
+        <img
+          src="/config/images/official/cheers_to_beergang.png"
+          className="cheers"
+          key={`cheers_${i + 1}`}
+          alt={`cheers${i + 1}`}
+        />,
+      )
+    }
+    return itemArr
+  }
   return (
     <Container>
       <div className="back">
@@ -191,7 +206,11 @@ const Join = () => {
           </div>
         </div>
       </div>
-      <div className="cheers_text">Cheers to Beergang</div>
+      <div className="cheers_container">
+        <Marquee gradient={false} speed={100}>
+          <MarqueeItem />
+        </Marquee>
+      </div>
     </Container>
   )
 }
