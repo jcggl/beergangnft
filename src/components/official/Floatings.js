@@ -9,7 +9,8 @@ const Container = styled.div`
   display: flex;
   width: 100%;
   height: 133px;
-  top: 900px;
+  //top: 900px;
+  bottom: 10vh;
   font-family: 'Poppins';
 
   @media (max-width: 992px) {
@@ -47,9 +48,9 @@ const Container = styled.div`
       justify-content: center;
       background: #000000;
       box-sizing: border-box;
+      height: 60px;
       border: 0.5px #ff6700;
       border-radius: 6px;
-      margin-left: 24px;
       padding-left: 8px;
       padding-right: 8px;
 
@@ -153,10 +154,7 @@ const Floatings = () => {
   return (
     <Container>
       <div className="music_box_area" onMouseEnter={onHoverMusicBox} onMouseLeave={onLeaveMusicBox}>
-        <div className="small_music_box">
-          <img className="music_icon" src="/config/images/official/icon_music.png" />
-        </div>
-        {musicBox && (
+        {musicBox ? (
           <div className="large_music_box">
             <img className="music_icon" src="/config/images/official/icon_music.png" />
             <div className="music_info">
@@ -176,6 +174,10 @@ const Floatings = () => {
               />
               {/*<button className="next_btn" />*/}
             </div>
+          </div>
+        ) : (
+          <div className="small_music_box">
+            <img className="music_icon" src="/config/images/official/icon_music.png" />
           </div>
         )}
       </div>

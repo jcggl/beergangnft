@@ -1,4 +1,5 @@
 import Flicking from '@egjs/react-flicking'
+import { Arrow } from '@egjs/flicking-plugins'
 import '@egjs/react-flicking/dist/flicking.css'
 import '@egjs/react-flicking/dist/flicking-inline.css'
 import React from 'react'
@@ -39,11 +40,18 @@ const Container = styled.div`
     font-weight: 400;
     font-size: 120px;
     line-height: 120px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
 
     @media (max-width: 992px) {
       font-size: 80px;
       line-height: 100px;
       margin-bottom: 50px;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
     }
 
     @media (max-width: 767px) {
@@ -51,6 +59,51 @@ const Container = styled.div`
       margin-bottom: 20px;
       font-size: 48px;
       line-height: 56px;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+    }
+
+    .arrows {
+      display: flex;
+      flex-flow: row nowrap;
+      position: relative;
+
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      }
+      .is-outside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 60px;
+        background: #1f1f1f;
+        border-radius: 4px;
+        cursor: pointer;
+        @media (max-width: 992px) {
+          width: 50px;
+          height: 42px;
+        }
+        @media (max-width: 767px) {
+          width: 36px;
+          height: 30px;
+        }
+      }
+      .flicking-arrow-prev {
+        margin-right: 10px;
+      }
+      img {
+        width: 32.8px;
+        height: 25px;
+        @media (max-width: 992px) {
+          width: 23px;
+          height: 17px;
+        }
+        @media (max-width: 767px) {
+          width: 17.4px;
+          height: 13.5px;
+        }
+      }
     }
   }
 
@@ -67,10 +120,21 @@ const Container = styled.div`
 `
 
 const Roadmap = ({ roadmapRef }) => {
+  const _plugins = [new Arrow({ parentEl: document.body, moveCount: 1 })]
   return (
     <Container ref={roadmapRef}>
-      <div className="title">Roadmap</div>
-      <Flicking bound="true">
+      <div className="title">
+        <p>Roadmap</p>
+        <div className="arrows">
+          <span className="flicking-arrow-prev is-outside">
+            <img src={'/config/images/official/icon_arrow_left.png'} />
+          </span>
+          <span className="flicking-arrow-next is-outside">
+            <img src={'/config/images/official/icon_arrow_right.png'} />
+          </span>
+        </div>
+      </div>
+      <Flicking bound="true" plugins={_plugins}>
         <div className="panel roadmap_panel">
           <TrueIdentity />
         </div>
