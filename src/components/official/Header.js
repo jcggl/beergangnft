@@ -26,6 +26,7 @@ const Container = styled.div`
     width: 100%;
     max-width: 1680px;
     padding: 0 120px;
+    backdrop-filter: blur(10px);
 
     @media (max-width: 992px) {
       padding: 0 50px;
@@ -91,6 +92,7 @@ const Container = styled.div`
       top: 74px;
       padding-right: 50px;
       background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
     }
     @media (max-width: 767px) {
       display: flex;
@@ -101,6 +103,7 @@ const Container = styled.div`
       padding-left: 20px;
       padding-right: 20px;
       background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
     }
   }
 

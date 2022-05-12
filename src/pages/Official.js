@@ -38,6 +38,10 @@ const Official = () => {
   const teamRef = useRef(null)
   const refs = [aboutRef, roadmapRef, communityRef, teamRef]
 
+  document.ontouchmove = function (e) {
+    e.preventDefault()
+  }
+
   return (
     <Container>
       <Header refs={refs} />

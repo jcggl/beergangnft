@@ -8,6 +8,15 @@ const useAudio = ({ url, autoPlay = true, loop = true }) => {
   audio.autoplay = autoPlay
   audio.loop = loop
 
+  // const autoPlayEvent = () => {
+  //   console.log('clicked')
+  //   setPlaying(true)
+  // }
+  // useEffect(() => {
+  //   document.addEventListener('scroll', autoPlayEvent)
+  //   return () => document.removeEventListener('scroll', autoPlayEvent)
+  // }, [])
+
   useEffect(() => {
     playing ? audio.play() : audio.pause()
   }, [playing])
