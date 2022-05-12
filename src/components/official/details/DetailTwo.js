@@ -1,49 +1,49 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const DetailTwo = () => {
-  const Container = styled.div`
-    position: relative;
+const Container = styled.div`
+  position: relative;
 
+  .cheers {
+    position: absolute;
+    right: 240px;
+    bottom: 0;
+    color: #ff6700;
+    font-family: Komika Axis;
+    font-size: 82px;
+    font-weight: 400;
+  }
+  img {
+    display: block;
+    width: 318px;
+    margin: 20px 0 20px auto;
+  }
+  @media (max-width: 992px) {
     .cheers {
-      position: absolute;
-      right: 240px;
-      bottom: 0;
-      color: #ff6700;
-      font-family: Komika Axis;
-      font-size: 82px;
-      font-weight: 400;
+      right: 187px;
+      bottom: 12px;
+      font-size: 62px;
     }
     img {
-      display: block;
-      width: 318px;
-      margin: 20px 0 20px auto;
+      width: 235px;
+      margin: 60px 0 18px auto;
     }
-    @media (max-width: 992px) {
-      .cheers {
-        right: 187px;
-        bottom: 12px;
-        font-size: 62px;
-      }
-      img {
-        width: 235px;
-        margin: 60px 0 18px auto;
-      }
+  }
+  @media (max-width: 767px) {
+    .cheers {
+      right: 83px;
+      bottom: 14px;
+      font-size: 49px;
+      line-height: 82px;
     }
-    @media (max-width: 767px) {
-      .cheers {
-        right: 83px;
-        bottom: 14px;
-        font-size: 49px;
-        line-height: 82px;
-      }
-      img {
-        width: 166px;
-        margin: 46px 18px 51px auto;
-      }
+    img {
+      width: 166px;
+      margin: 46px 18px 51px auto;
     }
-  `
+  }
+`
 
+const DetailTwo = () => {
   return (
     <Container>
       <div className="title">A pass to our GoodGang community</div>

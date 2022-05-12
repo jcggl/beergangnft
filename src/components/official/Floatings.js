@@ -4,13 +4,14 @@ import useAudio from '../../hooks/useAudio'
 import music from '../../statics/musics/Beer_Gang_M1NU.mp3'
 
 const Container = styled.div`
-  position: fixed;
-  z-index: 10;
+  //position: fixed;
+  //z-index: 10;
   display: flex;
   width: 100%;
   height: 133px;
   //top: 900px;
-  bottom: 10vh;
+  //top: min(80vh, 900px);
+  //bottom: 10vh;
   font-family: 'Poppins';
 
   @media (max-width: 992px) {
@@ -18,10 +19,13 @@ const Container = styled.div`
   }
 
   .music_box_area {
-    position: absolute;
+    //position: absolute;
+    position: fixed;
+    z-index: 10;
+    bottom: 5vh;
     display: flex;
     flex-flow: row nowrap;
-    bottom: 0;
+    //bottom: 0;
     left: 120px;
 
     .small_music_box {
@@ -51,7 +55,7 @@ const Container = styled.div`
       height: 60px;
       border: 0.5px #ff6700;
       border-radius: 6px;
-      padding-left: 8px;
+      padding-left: 10px;
       padding-right: 8px;
 
       .music_icon {
@@ -109,9 +113,73 @@ const Container = styled.div`
     }
   }
 
+  .music_wave {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    padding: 3px 5px;
+    transition: all 1s ease;
+    span {
+      width: 2px;
+      height: 38px;
+      background-color: #bf4d00;
+      border-radius: 1px;
+      margin: 0 2.5px;
+      transform-origin: bottom;
+      transition: opacity 0.3s ease-out;
+      content: '';
+      transform: scaleY(0.5);
+    }
+    &.playing {
+      span {
+        transition: all 1s ease;
+        animation: bounce 2.2s ease infinite alternate;
+        transform: scaleY(1);
+
+        &:nth-child(2) {
+          -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+        }
+        &:nth-child(3) {
+          -webkit-animation-delay: -2.4s;
+          animation-delay: -2.4s;
+        }
+        &:nth-child(4) {
+          -webkit-animation-delay: -3.7s;
+          animation-delay: -3.7s;
+        }
+        &:nth-child(5) {
+          -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+        }
+      }
+    }
+    @keyframes bounce {
+      10% {
+        transform: scaleY(0.25);
+      }
+      30% {
+        transform: scaleY(0.83);
+      }
+      60% {
+        transform: scaleY(0.42);
+      }
+      80% {
+        transform: scaleY(0.625);
+      }
+      100% {
+        transform: scaleY(0.5);
+      }
+    }
+  }
+
   .metaverse_box {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    z-index: 10;
+    bottom: 5vh;
+    //position: absolute;
+    //bottom: 0;
     right: 140px;
 
     .metaverse_button {
@@ -149,14 +217,22 @@ const Floatings = () => {
   const onLeaveMusicBox = () => {
     setMusicBox(false)
   }
-  const onClickMetaverse = () => {}
+  const onClickMetaverse = () => {
+    window.open('https://pleasant-mousy-jackfruit.glitch.me/', '_blank')
+  }
 
   return (
     <Container>
       <div className="music_box_area" onMouseEnter={onHoverMusicBox} onMouseLeave={onLeaveMusicBox}>
         {musicBox ? (
           <div className="large_music_box">
-            <img className="music_icon" src="/config/images/official/icon_music.png" />
+            <div className={playing ? 'music_wave playing' : 'music_wave'}>
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+            </div>
             <div className="music_info">
               <p className="title">{songs[musicNum].title}</p>
               <p className="artist">{songs[musicNum].artist}</p>
@@ -177,7 +253,13 @@ const Floatings = () => {
           </div>
         ) : (
           <div className="small_music_box">
-            <img className="music_icon" src="/config/images/official/icon_music.png" />
+            <div className={playing ? 'music_wave playing' : 'music_wave'}>
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+            </div>
           </div>
         )}
       </div>
