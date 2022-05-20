@@ -67,7 +67,7 @@ const Staut = () => {
   return (
     <Container>
       <video preload="true" autoPlay playsInline loop muted className="video-tag">
-        <source src="https://jcggl.github.io/publicDrive/main_brown.mp4" type="video/mp4" />
+        <source src="https://d3n7wfb7g7ygbc.cloudfront.net/maintwitt_brown.mp4" type="video/mp4" />
       </video>
       <div className="staut_title">
         Staut <span className="staut_abv">5.5% ABV</span>

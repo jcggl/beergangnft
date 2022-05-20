@@ -41,12 +41,12 @@ const Universe = () => {
   return (
     <Container>
       <video preload="true" autoPlay playsInline loop muted={true} className="video-tag">
-        <source src="https://jcggl.github.io/publicDrive/v0426_Univ_horizontal.mp4" type="video/mp4" />
+        <source src="https://d3n7wfb7g7ygbc.cloudfront.net/v0426_Univ_horizontal.mp4" type="video/mp4" />
       </video>
       <video preload="true" autoPlay playsInline loop muted={true} className="video-tag_mobile">
-        <source src="https://jcggl.github.io/publicDrive/v0426_Univ_vertical.mp4" type="video/mp4" />
+        <source src="https://d3n7wfb7g7ygbc.cloudfront.net/v0426_Univ_vertical.mp4" type="video/mp4" />
       </video>
-      <img src="/config/images/official/beergang_universe.png" alt={'beergang_universe'} />
+      {/*<img src="/config/images/official/beergang_universe.png" alt={'beergang_universe'} />*/}
     </Container>
   )
 }
