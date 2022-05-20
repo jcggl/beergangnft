@@ -81,7 +81,7 @@ const Container = styled.div`
     @media (max-width: 767px) {
       height: unset;
       overflow-x: auto;
-      margin-bottom: 112px;
+      margin-bottom: 20px;
     }
 
     .lyquid_wrapper {
