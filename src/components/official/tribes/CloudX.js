@@ -15,7 +15,7 @@ const Container = styled.div`
   }
 
   @media (max-width: 767px) {
-    width: unset;
+    width: 60vw;
     max-width: 264px;
     margin-bottom: 0;
   }
