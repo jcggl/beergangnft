@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Header from '../components/official/Header'
 import Promotion from '../components/official/Promotion'
@@ -37,20 +37,31 @@ const Official = () => {
   const communityRef = useRef(null)
   const teamRef = useRef(null)
   const refs = [aboutRef, roadmapRef, communityRef, teamRef]
+  const [mainVisible, setMainVisible] = useState(true)
 
-  // const preventDefault = (e) => {
-  //   e.preventDefault()
-  // }
-  //
-  // useEffect(() => {
-  //   document.body.addEventListener('touchmove', preventDefault)
-  //   return () => document.body.removeEventListener('touchmove', preventDefault)
-  // }, [])
+  const toggleMainVideo = () => {
+    let scrollLocation = document.documentElement.scrollTop // 현재 스크롤바 위치
+    // let windowHeight = window.innerHeight // 스크린 창
+    let fullHeight = document.body.scrollHeight //  margin 값은 포함 x
+
+    if (scrollLocation > fullHeight - 1000 && mainVisible) {
+      setMainVisible(false)
+    } else {
+      setMainVisible(true)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', toggleMainVideo)
+    return () => {
+      window.removeEventListener('scroll', toggleMainVideo)
+    }
+  }, [])
 
   return (
     <Container>
       <Header refs={refs} />
-      <Promotion />
+      <Promotion mainVisible={mainVisible} />
       <Floatings />
       <div className="contents">
         <Intro />
