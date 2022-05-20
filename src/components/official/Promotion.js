@@ -34,9 +34,10 @@ const Container = styled.div`
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       display: block;
-      height: 100%;
+      //height: 100%;
       width: auto;
-      margin: 0 auto;
+      margin: 0 auto 300px;
+      height: 100vh;
     }
   }
 
@@ -210,7 +211,7 @@ const Promotion = () => {
     <Container>
       <div className="video-box">
         <video preload="true" autoPlay playsInline loop muted className="video-tag">
-          <source src="https://jcggl.github.io/publicDrive/homepage_main.mp4" type="video/mp4" />
+          <source src="https://d3n7wfb7g7ygbc.cloudfront.net/homepage_main.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="links">

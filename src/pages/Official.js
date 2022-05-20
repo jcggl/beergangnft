@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import styled from 'styled-components'
 import Header from '../components/official/Header'
 import Promotion from '../components/official/Promotion'
@@ -38,9 +38,14 @@ const Official = () => {
   const teamRef = useRef(null)
   const refs = [aboutRef, roadmapRef, communityRef, teamRef]
 
-  document.ontouchmove = function (e) {
-    e.preventDefault()
-  }
+  // const preventDefault = (e) => {
+  //   e.preventDefault()
+  // }
+  //
+  // useEffect(() => {
+  //   document.body.addEventListener('touchmove', preventDefault)
+  //   return () => document.body.removeEventListener('touchmove', preventDefault)
+  // }, [])
 
   return (
     <Container>
