@@ -36,8 +36,12 @@ const Container = styled.div`
       display: block;
       //height: 100%;
       width: auto;
-      margin: 0 auto 300px;
+      margin: 0 auto;
       height: 100vh;
+
+      @media (max-width: 767px) {
+        display: ${(props) => (props.mainVisible ? 'block' : 'none')};
+      }
     }
   }
 
@@ -206,9 +210,9 @@ const Container = styled.div`
   }
 `
 
-const Promotion = () => {
+const Promotion = ({ mainVisible }) => {
   return (
-    <Container>
+    <Container mainVisible={mainVisible}>
       <div className="video-box">
         <video preload="true" autoPlay playsInline loop muted className="video-tag">
           <source src="https://d3n7wfb7g7ygbc.cloudfront.net/homepage_main.mp4" type="video/mp4" />
