@@ -67,7 +67,7 @@ const Lyquid = () => {
   return (
     <Container>
       <video preload="true" autoPlay playsInline loop muted className="video-tag">
-        <source src="https://jcggl.github.io/publicDrive/main_yellow.mp4" type="video/mp4" />
+        <source src="https://d3n7wfb7g7ygbc.cloudfront.net/maintwitt_yellow.mp4" type="video/mp4" />
       </video>
       <div className="lyquid_title">
         Lyquid <span className="lyquid_abv">5% ABV</span>
