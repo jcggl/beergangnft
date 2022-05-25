@@ -210,9 +210,11 @@ const Member = ({ name, role, desc, snsInfo }) => {
   return (
     <MemberContainer>
       <div className="name">{name}</div>
-      <div className="role">
-        <span className="role_box">{role}</span>
-      </div>
+      {role && (
+        <div className="role">
+          <span className="role_box">{role}</span>
+        </div>
+      )}
       <div className="introduce">{desc}</div>
       {snsInfo && (
         <div className="sns_info">
@@ -370,6 +372,7 @@ const Team = ({ teamRef }) => {
             desc: 'Realistic Dreamer',
           }}
         />
+        <Member />
       </div>
     </Container>
   )

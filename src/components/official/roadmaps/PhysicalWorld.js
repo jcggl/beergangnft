@@ -142,8 +142,8 @@ const PhysicalWorld = () => {
         <div className="physical_subject">ARGang</div>
         <div className="physical_desc gray_color">
           an Augmented Reality camera to help people express their true identities with Beergang avatars and share
-          special moments with the world. It will be open to other NFT avatar communities. Shoot us an email if you’re
-          interested in partnering with us!
+          special moments with the world. Users can use the Beergang AR effects on our own mobile/web apps, and
+          Instagram. We’re planning to open ARGang.
         </div>
         <div className="physical_in_progress">
           <img src="/config/images/official/roadmap_in_progress.png" />
