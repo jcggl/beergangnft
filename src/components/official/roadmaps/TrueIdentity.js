@@ -145,19 +145,11 @@ const TrueIdentity = () => {
 
         <div className="true_subject">GangAI</div>
         <div className="true_desc gray_color">
-          We have our own AI technique where Beergang will recognize your emotional status from your speech. It will
+          we have our own AI technique where Beergang will recognize your emotional status from your speech. It will
           show a face and body gesture based on your emotional status.
         </div>
         <div className="true_in_progress">
           <img src="/config/images/official/roadmap_in_progress.png" />
-        </div>
-
-        <div className="true_subject gray_color">Other Avatars</div>
-        <div className="true_desc gray_color">
-          Winegang? Sojugang? Coffeegang? Tell me which gangs do you want to have?
-        </div>
-        <div className="true_to_be_continued">
-          <img src="/config/images/official/roadmap_continued.png" />
         </div>
       </div>
     </Container>
