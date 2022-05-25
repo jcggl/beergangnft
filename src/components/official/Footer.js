@@ -169,7 +169,7 @@ const Footer = () => {
         </a>
         <div className="links">
           <div className="operations">
-            <a className="img_link">
+            <a className="img_link" href="https://testnets.opensea.io/collection/gglbeer-v4" target="_blank">
               <img className="icon_opensea" src="/config/images/official/icon_opensea.png" />
             </a>
             <a className="img_link" href="https://twitter.com/beergang_nft" target="_blank">

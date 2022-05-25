@@ -214,15 +214,22 @@ const Promotion = ({ mainVisible }) => {
   return (
     <Container mainVisible={mainVisible}>
       <div className="video-box">
-        <video preload="true" autoPlay playsInline loop muted className="video-tag">
+        <video
+          preload="true"
+          autoPlay
+          playsInline
+          loop
+          muted
+          poster="/config/images/official/img_main.png"
+          className="video-tag">
           <source src="https://d3n7wfb7g7ygbc.cloudfront.net/homepage_main.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="links">
         <div className="box">
-          <div className="icon">
+          <a className="icon" href="https://testnets.opensea.io/collection/gglbeer-v4" target="_blank">
             <img className="icon_img" src="/config/images/official/icon_opensea.png" />
-          </div>
+          </a>
           <a className="icon" href="https://twitter.com/beergang_nft" target="_blank">
             <img className="icon_img" src="/config/images/official/icon_twitter.png" />
           </a>
@@ -240,7 +247,7 @@ const Promotion = ({ mainVisible }) => {
       <div className="beergang">BEERGANG</div>
       <div className="presale">#PHASE 1</div>
       <div className="march_2022">
-        <span className="gradient">2022.05.10</span>
+        <span className="gradient">2022.05.30</span>
       </div>
       <div className="wallet">
         Connect to Metamask
