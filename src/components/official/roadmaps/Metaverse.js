@@ -171,7 +171,7 @@ const Metaverse = () => {
         <div className="metaverse_subject">GangHouse</div>
         <div className="metaverse_desc gray_color">
           GangHouse, a private 3D metaverse Pub (equivalent yet more interactive metaverse space of our Discord server)
-          that will launch in Q2 this year. In GangHouse, you will experience and create the future together by
+          that will launch in Q3 this year. In GangHouse, you will experience and create the future together by
           communicating with other holders through text messages, voice, and video chat from various backgrounds with
           common interests
         </div>
