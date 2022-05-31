@@ -247,7 +247,7 @@ const Promotion = ({ mainVisible }) => {
       <div className="beergang">BEERGANG</div>
       <div className="presale">#PHASE 1</div>
       <div className="march_2022">
-        <span className="gradient">2022.05.30</span>
+        <span className="gradient">Q3, 2022</span>
       </div>
       <div className="wallet">
         Connect to Metamask

@@ -27,6 +27,7 @@ const Container = styled.div`
     font-size: 64px;
     line-height: 70px;
     color: #4459ff;
+    margin-top: 34px;
     margin-bottom: 20px;
 
     @media (max-width: 767px) {

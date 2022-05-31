@@ -208,8 +208,8 @@ const About = ({ aboutRef }) => {
     ))
 
   return (
-    <Container ref={aboutRef}>
-      <div className="desc_box">
+    <Container>
+      <div className="desc_box" ref={aboutRef}>
         <div className="about">Cheers to Beergang</div>
         <div className="desc">
           Beergang is a collection of 10,000 avatars built on the Homebrew Algorithm created by GoodGang Labs and stored

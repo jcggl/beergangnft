@@ -144,7 +144,7 @@ const Container = styled.div`
 
 const Header = ({ refs }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const menus = ['About', 'Roadmap', 'Community', 'Team']
+  const menus = ['About', 'Roadmap', 'Team']
 
   const onClickMenu = (num) => {
     refs[num].current.scrollIntoView({ behavior: 'smooth' })
