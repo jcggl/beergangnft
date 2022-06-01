@@ -138,6 +138,13 @@ table {
   src: local('Poppins'), url(Poppins-Regular.woff) format('woff');
 }
 
+@font-face{
+  font-family:'Poppins';
+  src: local('Poppins'), url(Poppins-Black.woff) format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'Komika Axis';
   src: local('Komika Axis'), url(KOMIKAX.woff) format('woff');
