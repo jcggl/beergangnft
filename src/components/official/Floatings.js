@@ -27,6 +27,8 @@ const Container = styled.div`
     flex-flow: row nowrap;
     //bottom: 0;
     left: 120px;
+    border: 0.5px solid #ff6700;
+    border-radius: 6px;
 
     .small_music_box {
       display: flex;
@@ -129,7 +131,19 @@ const Container = styled.div`
       transform-origin: bottom;
       transition: opacity 0.3s ease-out;
       content: '';
-      transform: scaleY(0.5);
+      transform: scaleY(0.45);
+      &:nth-child(2) {
+        transform: scaleY(0.7);
+      }
+      &:nth-child(3) {
+        transform: scaleY(0.6);
+      }
+      &:nth-child(4) {
+        transform: scaleY(0.85);
+      }
+      &:nth-child(5) {
+        transform: scaleY(0.35);
+      }
     }
     &.playing {
       span {

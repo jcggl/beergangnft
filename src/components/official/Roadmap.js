@@ -69,6 +69,7 @@ const Container = styled.div`
       position: relative;
 
       @media (max-width: 767px) {
+        display: none;
         margin-top: 20px;
       }
       .is-outside {

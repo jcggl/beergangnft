@@ -6,6 +6,7 @@ import Floatings from '../components/official/Floatings'
 import Intro from '../components/official/Intro'
 import About from '../components/official/About'
 import Universe from '../components/official/Universe'
+import FullStory from '../components/official/FullStory'
 import FourTribes from '../components/official/FourTribes'
 import Roadmap from '../components/official/Roadmap'
 import Partnerships from '../components/official/Partnerships'
@@ -34,9 +35,8 @@ const Container = styled.div`
 const Official = () => {
   const aboutRef = useRef(null)
   const roadmapRef = useRef(null)
-  const communityRef = useRef(null)
   const teamRef = useRef(null)
-  const refs = [aboutRef, roadmapRef, communityRef, teamRef]
+  const refs = [aboutRef, roadmapRef, teamRef]
   const [mainVisible, setMainVisible] = useState(true)
 
   const toggleMainVideo = () => {
@@ -67,9 +67,10 @@ const Official = () => {
         <Intro />
         <About aboutRef={aboutRef} />
         <Universe />
+        <FullStory />
         <FourTribes />
         <Roadmap roadmapRef={roadmapRef} />
-        <Partnerships communityRef={communityRef} />
+        <Partnerships />
         <Join />
         <Team teamRef={teamRef} />
         <Footer />
