@@ -15,7 +15,7 @@ const Container = styled.div`
     padding: 20px;
   }
   .title {
-    font-family: 'Classic Comic';
+    font-family: 'Komika Axis';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;

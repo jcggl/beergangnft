@@ -93,7 +93,6 @@ const Container = styled.div`
         font-size: 86px;
         line-height: 90px;
         font-weight: 300;
-        font-style: italic;
         @media (max-width: 992px) {
           flex-direction: row;
           font-size: 56px;
@@ -131,6 +130,7 @@ const Container = styled.div`
             font-weight: 900;
             text-decoration: line-through;
             text-decoration-thickness: 3px;
+            font-style: italic;
           }
         }
       }
