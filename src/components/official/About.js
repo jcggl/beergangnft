@@ -66,8 +66,10 @@ const Container = styled.div`
       }
     }
 
-    .details {
+    .details,
+    .cards {
       display: flex;
+      flex-flow: column nowrap;
       box-sizing: content-box;
       min-height: 705px;
       margin-top: 136px;
@@ -187,24 +189,40 @@ const Container = styled.div`
 `
 
 const About = ({ aboutRef }) => {
-  const [selectedNum, setSelectedNum] = useState(0)
-  const onClickNumber = (num) => {
-    setSelectedNum(num)
-  }
+  // const [selectedNum, setSelectedNum] = useState(0)
+  // const onClickNumber = (num) => {
+  //   setSelectedNum(num)
+  // }
   const details = [
     { number: '01', comp: <DetailOne /> },
     { number: '02', comp: <DetailTwo /> },
     { number: '03', comp: <DetailThree /> },
   ]
-  const Numbers = () =>
+  // const Numbers = () =>
+  //   details.map((detail, idx) => (
+  //     <span
+  //       key={`about${idx + 1}`}
+  //       // className={selectedNum === idx ? 'selected' : undefined}
+  //       // onClick={() => onClickNumber(idx)}>
+  //       className={'selected'}>
+  //       {detail.number}
+  //       {/*{selectedNum === idx && <em>&nbsp;&nbsp;</em>}*/}
+  //       <em>&nbsp;&nbsp;</em>
+  //     </span>
+  //   ))
+  const DetailCard = () =>
     details.map((detail, idx) => (
-      <span
-        key={`about${idx + 1}`}
-        className={selectedNum === idx ? 'selected' : undefined}
-        onClick={() => onClickNumber(idx)}>
-        {detail.number}
-        {selectedNum === idx && <em>&nbsp;&nbsp;</em>}
-      </span>
+      <div className="card">
+        <div className="numbers">
+          <span key={`about${idx + 1}`} className="selected">
+            {detail.number}
+            <em>&nbsp;&nbsp;</em>
+          </span>
+        </div>
+        <div key={`detail${idx + 1}`} className="detail_card">
+          {detail.comp}
+        </div>
+      </div>
     ))
 
   return (
@@ -216,11 +234,14 @@ const About = ({ aboutRef }) => {
           on the Ethereum blockchain network and IPFS. Beergang mirrors your emotion to express your feelings in our
           GoodGang universe.{' '}
         </div>
-        <div className="details">
-          <div className="numbers">
-            <Numbers />
-          </div>
-          <div className="detail_card">{details[selectedNum].comp}</div>
+        {/*<div className="details">*/}
+        {/*  <div className="numbers">*/}
+        {/*    <Numbers />*/}
+        {/*  </div>*/}
+        {/*  <div className="detail_card">{details[selectedNum].comp}</div>*/}
+        {/*</div>*/}
+        <div className="cards">
+          <DetailCard />
         </div>
       </div>
     </Container>
