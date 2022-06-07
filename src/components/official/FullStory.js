@@ -69,7 +69,19 @@ const Container = styled.div`
       height: 140px;
     }
     @media (max-width: 767px) {
-      height: 150px;
+      display: none;
+    }
+  }
+  .universe_img_mobile {
+    display: none;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+
+    @media (max-width: 767px) {
+      display: block;
+      height: 180px;
       margin-top: 20px;
     }
   }
@@ -115,6 +127,7 @@ const FullStory = () => {
         between the tribes. What is going on here in this magical place called GangHouse?
       </div>
       <img className="universe_img" src="/config/images/official/img_story_bg.png" />
+      <img className="universe_img_mobile" src="/config/images/official/img_story_mobile_bg.png" />
     </Container>
   )
 }

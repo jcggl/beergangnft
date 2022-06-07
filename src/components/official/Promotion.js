@@ -220,7 +220,7 @@ const Promotion = ({ mainVisible }) => {
           playsInline
           loop
           muted
-          poster="/config/images/official/img_main.png"
+          // poster="/config/images/official/logo_animation.gif"
           className="video-tag">
           <source src="https://d3n7wfb7g7ygbc.cloudfront.net/homepage_main.mp4" type="video/mp4" />
         </video>
