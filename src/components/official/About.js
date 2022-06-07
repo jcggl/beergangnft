@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { DetailOne, DetailTwo, DetailThree } from './details'
 
@@ -66,13 +66,12 @@ const Container = styled.div`
       }
     }
 
-    .details,
     .cards {
       display: flex;
       flex-flow: column nowrap;
       box-sizing: content-box;
       min-height: 705px;
-      margin-top: 136px;
+      margin-top: 96px;
       padding: 40px 0;
       @media (max-width: 992px) {
         flex-direction: column;
@@ -87,100 +86,117 @@ const Container = styled.div`
         padding: 26px 0;
       }
 
-      .numbers {
+      .card {
         display: flex;
-        flex-flow: column nowrap;
-        font-family: Poppins;
-        color: #ff6700;
-        font-size: 86px;
-        line-height: 90px;
-        font-weight: 300;
+        flex-flow: row nowrap;
+        padding: 40px 0;
+        margin-top: 40px;
         @media (max-width: 992px) {
-          flex-direction: row;
-          font-size: 56px;
-          line-height: 64px;
+          flex-flow: column nowrap;
+          padding: 33px 0;
+          margin-top: 0;
         }
         @media (max-width: 767px) {
-          flex-direction: row;
-          font-size: 38px;
-          line-height: 44px;
+          flex-flow: column nowrap;
+          padding: 26px 0;
+          margin-top: 0;
         }
 
-        span {
-          width: 180px;
+        .numbers {
+          display: flex;
+          flex-flow: column nowrap;
+          font-family: Poppins;
+          color: #ff6700;
+          font-size: 86px;
+          line-height: 90px;
+          font-weight: 300;
           @media (max-width: 992px) {
-            width: 86px;
+            flex-direction: row;
+            font-size: 56px;
+            line-height: 64px;
           }
           @media (max-width: 767px) {
-            width: 50px;
+            flex-direction: row;
+            font-size: 38px;
+            line-height: 44px;
           }
 
-          &:nth-child(2),
-          &:nth-child(3) {
-            margin-top: 30px;
+          span {
+            width: 180px;
             @media (max-width: 992px) {
-              margin-top: 0;
-              margin-left: 12px;
+              width: 86px;
             }
             @media (max-width: 767px) {
-              margin-top: 0;
-              margin-left: 18px;
+              width: 50px;
+            }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+              margin-top: 30px;
+              @media (max-width: 992px) {
+                margin-top: 0;
+                margin-left: 12px;
+              }
+              @media (max-width: 767px) {
+                margin-top: 0;
+                margin-left: 18px;
+              }
+            }
+
+            &.selected {
+              font-weight: 900;
+              text-decoration: line-through;
+              text-decoration-thickness: 3px;
+              font-style: italic;
+            }
+          }
+        }
+
+        .details {
+          display: flex;
+          flex-flow: column;
+          margin-left: 24px;
+          width: 100%;
+          font-family: Poppins;
+          @media (max-width: 992px) {
+            margin-left: 0;
+          }
+          @media (max-width: 767px) {
+            margin-left: 0;
+          }
+
+          .title {
+            color: #fafafa;
+            font-size: 58px;
+            line-height: 87px;
+            font-weight: 700;
+            @media (max-width: 992px) {
+              margin-top: 24px;
+              font-size: 38px;
+              line-height: 48px;
+            }
+            @media (max-width: 767px) {
+              margin-top: 16px;
+              font-size: 24px;
+              line-height: 36px;
             }
           }
 
-          &.selected {
-            font-weight: 900;
-            text-decoration: line-through;
-            text-decoration-thickness: 3px;
-            font-style: italic;
-          }
-        }
-      }
-
-      .detail_card {
-        display: flex;
-        flex-flow: column;
-        margin-left: 24px;
-        width: 100%;
-        font-family: Poppins;
-        @media (max-width: 992px) {
-          margin-left: 0;
-        }
-        @media (max-width: 767px) {
-          margin-left: 0;
-        }
-
-        .title {
-          color: #fafafa;
-          font-size: 58px;
-          line-height: 87px;
-          font-weight: 700;
-          @media (max-width: 992px) {
-            margin-top: 24px;
-            font-size: 38px;
-            line-height: 48px;
-          }
-          @media (max-width: 767px) {
-            margin-top: 16px;
-            font-size: 24px;
-            line-height: 36px;
-          }
-        }
-
-        .sub {
-          margin-top: 10px;
-          color: #a1a1aa;
-          font-size: 20px;
-          line-height: 40px;
-          @media (max-width: 992px) {
-            margin-top: 12px;
-            font-size: 16px;
-            line-height: 32px;
-          }
-          @media (max-width: 767px) {
-            margin-top: 6px;
-            font-size: 12px;
-            line-height: 20px;
+          .sub {
+            margin-top: 10px;
+            color: #a1a1aa;
+            font-size: 20px;
+            line-height: 40px;
+            @media (max-width: 992px) {
+              margin-top: 12px;
+              font-size: 16px;
+              line-height: 32px;
+            }
+            @media (max-width: 767px) {
+              margin-top: 6px;
+              font-size: 12px;
+              line-height: 20px;
+            }
           }
         }
       }
@@ -189,39 +205,21 @@ const Container = styled.div`
 `
 
 const About = ({ aboutRef }) => {
-  // const [selectedNum, setSelectedNum] = useState(0)
-  // const onClickNumber = (num) => {
-  //   setSelectedNum(num)
-  // }
   const details = [
     { number: '01', comp: <DetailOne /> },
     { number: '02', comp: <DetailTwo /> },
     { number: '03', comp: <DetailThree /> },
   ]
-  // const Numbers = () =>
-  //   details.map((detail, idx) => (
-  //     <span
-  //       key={`about${idx + 1}`}
-  //       // className={selectedNum === idx ? 'selected' : undefined}
-  //       // onClick={() => onClickNumber(idx)}>
-  //       className={'selected'}>
-  //       {detail.number}
-  //       {/*{selectedNum === idx && <em>&nbsp;&nbsp;</em>}*/}
-  //       <em>&nbsp;&nbsp;</em>
-  //     </span>
-  //   ))
   const DetailCard = () =>
     details.map((detail, idx) => (
-      <div className="card">
+      <div className="card" key={`detail_card${idx + 1}`}>
         <div className="numbers">
-          <span key={`about${idx + 1}`} className="selected">
+          <span className="selected">
             {detail.number}
             <em>&nbsp;&nbsp;</em>
           </span>
         </div>
-        <div key={`detail${idx + 1}`} className="detail_card">
-          {detail.comp}
-        </div>
+        <div className="details">{detail.comp}</div>
       </div>
     ))
 
@@ -234,12 +232,6 @@ const About = ({ aboutRef }) => {
           on the Ethereum blockchain network and IPFS. Beergang mirrors your emotion to express your feelings in our
           GoodGang universe.{' '}
         </div>
-        {/*<div className="details">*/}
-        {/*  <div className="numbers">*/}
-        {/*    <Numbers />*/}
-        {/*  </div>*/}
-        {/*  <div className="detail_card">{details[selectedNum].comp}</div>*/}
-        {/*</div>*/}
         <div className="cards">
           <DetailCard />
         </div>
