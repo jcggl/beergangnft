@@ -13,6 +13,7 @@ import Partnerships from '../components/official/Partnerships'
 import Join from '../components/official/Join'
 import Footer from '../components/official/Footer'
 import Team from '../components/official/Team'
+import Loading from '../components/official/Loading'
 
 const Container = styled.div`
   display: flex;
@@ -21,6 +22,8 @@ const Container = styled.div`
   width: 100%;
   min-height: 100vh;
   background-color: #000000;
+  position: ${(props) => (props.loading ? 'fixed' : 'relative')};
+  overflow: ${(props) => (props.loading ? 'hidden' : 'initial')};
 
   .contents {
     display: flex;
@@ -38,6 +41,7 @@ const Official = () => {
   const teamRef = useRef(null)
   const refs = [aboutRef, roadmapRef, teamRef]
   const [mainVisible, setMainVisible] = useState(true)
+  const [loading, setLoading] = useState(true)
 
   const toggleMainVideo = () => {
     let scrollLocation = document.documentElement.scrollTop // 현재 스크롤바 위치
@@ -59,9 +63,10 @@ const Official = () => {
   }, [])
 
   return (
-    <Container>
+    <Container loading={loading}>
+      <Loading loading={loading} />
       <Header refs={refs} />
-      <Promotion mainVisible={mainVisible} />
+      <Promotion mainVisible={mainVisible} setLoading={setLoading} />
       <Floatings />
       <div className="contents">
         <Intro />
