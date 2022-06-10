@@ -105,15 +105,10 @@ const Container = styled.div`
     align-items: center;
     margin-top: 44px;
     margin-left: 120px;
-    //margin-bottom: 32px;
     width: 420px;
     height: 84px;
-    //border: 1px solid;
     background: linear-gradient(182.44deg, #ff6d1b 5.6%, #ff4b32 88.91%);
     backdrop-filter: blur(10px);
-    //border-image: linear-gradient(to bottom, #ff7d00, #f54303);
-    //border-image-slice: 1;
-    //background: rgba(0, 0, 0, 0.6);
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -128,14 +123,6 @@ const Container = styled.div`
 
     @media (max-width: 767px) {
       display: none;
-      //margin-top: 18px;
-      //margin-left: 20px;
-      //margin-bottom: 32px;
-      //width: 174px;
-      //height: 40px;
-      //font-size: 14px;
-      //line-height: 18px;
-      //font-weight: 600;
     }
 
     .wallet_icon {
@@ -210,7 +197,7 @@ const Container = styled.div`
   }
 `
 
-const Promotion = ({ mainVisible }) => {
+const Promotion = ({ mainVisible, setLoading }) => {
   return (
     <Container mainVisible={mainVisible}>
       <div className="video-box">
@@ -221,6 +208,9 @@ const Promotion = ({ mainVisible }) => {
           loop
           muted
           // poster="/config/images/official/logo_animation.gif"
+          onCanPlay={() => {
+            setLoading(false)
+          }}
           className="video-tag">
           <source src="https://d3n7wfb7g7ygbc.cloudfront.net/homepage_main.mp4" type="video/mp4" />
         </video>
